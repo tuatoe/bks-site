@@ -1,0 +1,9 @@
+{
+  "name": "bks-website",
+  "version": "1.0.0",
+  "author": "Tuatoe Daynuah",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
+}
