@@ -1,14 +1,8 @@
+@import "normalize.css";
+@import "base/_global";
+@import "modules/_large-hero";
+
 $mainBlue:#135fab;
 $mainOrange:#df8f27;
 $mainGreen: #7da640;
 $mainBrown: #aa6053;
-
-body{
-  font-family:'Roboto', sans-serif;
-  color:#333;
-}
-
-img{
-  max-width: 100%;
-  height:auto;
-}
