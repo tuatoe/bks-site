@@ -1,0 +1,24 @@
+.generic-content-container{
+    p{
+        font-weight: 100;
+        line-height: 1.65;
+        margin:1.8rem 0;
+        
+        @mixin atSmall{
+             font-size:1.125rem;
+        }
+    }
+    
+    p  a {
+            font-weight: 700;
+    }
+    h4{
+        color:$mainBlue;
+        font-size:1.6rem;
+        font-weight: 400;
+        
+        @mixin atSmall{
+            font-size:1.3rem;
+        }
+    }
+}
