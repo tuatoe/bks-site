@@ -3,18 +3,28 @@
         font-weight: 300;
         line-height: 1.65;
         margin:0 0 1.8rem 0;
+        color:#555;
         
         @mixin atSmall{
              font-size:1.125rem;
         }
     }
     
+    
     p  a {
             font-weight: 700;
     }
-    &--black-text{
+    
+    &--gray-text{
         p{
-            color:#000;
+            color:#555;
         }
+    }
+    
+     &--white-text{
+         p{
+            color:#FFF; 
+         }
+        
     }
 }
