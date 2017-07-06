@@ -598,16 +598,66 @@ a{
     }
     }
 
-.page-section{
-    
-    padding:1.2rem 0;
-}
+.wrapper--no-padding-until-medium{
+        padding-left:0;
+        padding-right:0;
+    }
 
 @media(min-width:800px){
 
+.wrapper--no-padding-until-medium{
+            padding-left:15px;
+            padding-right:15px
+    }
+    }
+
+.wrapper--no-padding-until-large{
+        padding-left:0;
+        padding-right:0;
+    }
+
+@media(min-width:1010){
+
+.wrapper--no-padding-until-large{
+            padding-left:15px;
+            padding-right:15px
+    }
+    }
+
+.page-section{
+    
+    padding:1.2rem 0;
+   
+}
+
+@media(min-width:1010){
+
 .page-section{
          padding:4.5rem 0
+   
 }
+    }
+
+.page-section--no-b-padding-until-large{
+        padding-bottom:0;
+    }
+
+@media(min-width:1010){
+
+.page-section--no-b-padding-until-large{
+            padding-bottom:4.5rem
+    }
+    }
+
+.page-section--no-b-padding-until-large{
+        padding-bottom:0;
+    }
+
+@media(min-width:1010){
+
+.page-section--no-b-padding-until-large{
+            padding-bottom:4.5rem
+    }
     }
 
 .page-section--blue{
@@ -618,6 +668,18 @@ a{
 .page-section--orange{
         background-color:#7da640;
         color:#FFF;
+    }
+
+.page-section--our-team{
+       background-color:@lightBlue;
+    }
+
+@media(min-width:800px){
+
+.page-section--our-team{
+              background:url('/assets/images/mont-nimba.jpg') top center no-repeat;
+            background-size: cover
+    }
     }
 
 .headline{
@@ -684,51 +746,129 @@ a{
         display: table;
     }
 
-.row--gutters-large{
-        margin-right:-100px;
-    }
+.row--t-padding{
+  padding-top:80px;
+}
 
 .row--gutters{
-        margin-right:-65px;
-    }
+  margin-right:-65px;
+}
+
+.row--gutters-large{
+    margin-right:-100px;
+}
+
+.row--gutters-small{
+  margin-right:-45px;
+}
 
 .row--gutters > div{
-        padding-right:65px;
-    }
+  padding-right:65px;
+}
 
 .row--gutters-large > div{
-        padding-right:100px;
-    }
+  padding-right:100px;
+}
+
+.row--gutters-small > div{
+  padding-right:45px;
+}
 
 .row__b-margin-until-medium{
-        margin-bottom: 1rem;
-    }
+  margin-bottom:1rem;
+}
 
 @media(min-width:800px){
-        .row__b-margin-until-medium{
-            margin-bottom: 0;
-        }
-        .row__medium-4{
-            float: left;
-            width:33.33%
-        }
-        .row__medium-4--larger{
-            width:37%;
-        }
-        
-        .row__medium-6{
-            width:50%;
+
+    .row__b-margin-until-medium {
+        margin-bottom:0;
+    }
+    .row__medium-4 {
+      float:left;
+      width:33.33%;
+    }
+
+    .row__medium-4--larger {
+      width:37%;
+    }
+
+    .row__medium-6{
+      float:left;
+      width:50%;
+    }
+
+    .row__medium-8{
+      float:left;
+      width:66.66%;
+    }
+
+    .row__medium-8--smaller{
+      width:63%;
+    }
+    }
+
+@media(min-width:1010){
+
+    .row__b-margin-until-medium {
+        margin-bottom:0;
+    }
+    .row__large-4 {
+      float:left;
+      width:33.33%;
+    }
+
+    .row__large--4--larger {
+      width:37%;
+    }
+
+    .row__large--6{
+      float:left;
+      width:50%;
+    }
+
+    .row__large--8{
+      float:left;
+      width:66.66%;
+    }
+
+    .row__large-8--smaller{
+      width:63%;
+    }
+    }
+
+/*begin equal height rules*/
+
+@media(min-width:800px){
+
+.row--equal-height-at-medium{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+    }
+
+.row--equal-height-at-medium > div {
+            float:none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
         }
 
-        .row__medium-8{
-            float: left;
-            width:66.66%
-        }
-        
-         .row__medium-8--larger{
-            width:63%;
-        }
+@media(min-width:800px){
+
+.row--equal-height-at-large{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
     }
+    }
+
+.row--equal-height-at-large > div {
+            float:none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
 
 .generic-content-container p{
         font-weight: 300;
@@ -747,19 +887,9 @@ a{
             font-weight: 700;
     }
 
-.generic-content-container h4{
-        font-size:1.6rem;
-        font-weight: 400;
-        margin:0;
-        padding:0;
-    }
-
-@media(min-width:530px){
-
-.generic-content-container h4{
-            font-size:1.3rem
-    }
-    }
+.generic-content-container--black-text p{
+            color:#000;
+        }
 
 .section-title{
     font-size:2.55rem;
@@ -780,6 +910,59 @@ a{
 
 .section-title__icon{
         margin-right:.5rem;
+    }
+
+.section-title--blue{
+        color:#2f5572;
+    }
+
+.section-title--white{
+        color:#FFF;
+    }
+
+.our-team{
+   background-color:rgba(255,255,255,.8); 
+   padding:0 15px 1px 15px;
+   margin-bottom:98px;
+}
+
+@media(min-width:1010){
+
+.our-team{
+         padding:0 1.8125rem 1px 1.8125rem;
+         margin-bottom:0
+}
+    }
+
+.our-team__photo{
+        border-radius: 80px;
+        overflow: hidden;
+        width:160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+        top:-80px;
+        border:6px solid rgba(255,255,255,.8);
+    }
+
+.our-team__name{
+        color:#2f5572;
+        text-align: center;
+        font-size:1.5rem;
+        font-weight: 500;
+        margin:0;
+    }
+
+.our-team__position{
+        color: #df8f27;
+        text-align: center;
+        font-weight: 400;
+        font-size: .9375rem;
+        margin: .25rem 0 1rem 0;
+    }
+
+.our-team--last{
+        margin-bottom: 0;
     }
 
 

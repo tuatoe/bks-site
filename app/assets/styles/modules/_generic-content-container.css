@@ -12,14 +12,9 @@
     p  a {
             font-weight: 700;
     }
-    h4{
-        font-size:1.6rem;
-        font-weight: 400;
-        margin:0;
-        padding:0;
-        
-        @mixin atSmall{
-            font-size:1.3rem;
+    &--black-text{
+        p{
+            color:#000;
         }
     }
 }
