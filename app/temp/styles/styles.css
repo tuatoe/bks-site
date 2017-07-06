@@ -673,20 +673,15 @@ a{
   }
 
 .page-section--orange{
-        background-color:#7da640;
+        background-color:#df8f27;
         color:#FFF;
     }
 
 .page-section--our-team{
        background-color:@lightBlue;
-    }
-
-@media(min-width:800px){
-
-.page-section--our-team{
-              background:url('/assets/images/mont-nimba.jpg') top center no-repeat;
-            background-size: cover
-    }
+        background:url('/assets/images/mont-nimba.jpg') top center no-repeat;
+        background-size: cover;
+       
     }
 
 .headline{
@@ -1259,5 +1254,19 @@ a{
 .primary-nav a:hover{
             color:#df8f27;
         }
+
+.reveal-item{
+    opacity: 0;
+    -webkit-transition: all 1.3s ease-out;
+    transition: all 1.3s ease-out;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+}
+
+.reveal-item--is-visible{
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
 
 
