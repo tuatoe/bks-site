@@ -1,0 +1,55 @@
+.site-header{
+    padding:10px 0;
+    position: absolute;
+    width:100%;
+    z-index: 2;
+    
+    @mixin atMedium{
+        background-color:rgba(47,85,114, .7);
+    }
+    
+    &__btn-container{
+        float:right;
+    }
+    
+    &__logo{
+        position: absolute;
+        background-color: #FFF;
+        padding:5px 20px;
+        top:0;
+        left:50%;
+        transform: translateX(-50%) scale(.8);
+        transform-origin: 50% 0;
+        
+        @mixin atMedium{
+            left:auto;
+            transform: translateX(0);
+        }
+    }
+    
+    &__logo__graphic{
+        text-indent: -999px;
+    }
+    
+    &__menu-icon{
+        width: 20px;
+        height: 20px;
+        background-color:#FFF;
+        position: absolute;
+        top:10px;
+        right:20px;
+        
+        @mixin atMedium{
+            display: none;
+        }
+        
+    }
+    
+    &__menu-content{
+        display: none;
+        
+        @mixin atMedium{
+            display: block;
+        }
+    }
+}
