@@ -53,12 +53,18 @@
             font-size:1rem;
              padding:9px 0;
             background-color: transparent;
+            
+            &.is-current-link{
+                color:$mainOrange;
+            }
         }
         
         &:hover{
             color:$mainOrange;
         }
     }
+    
+    
     
     
 }

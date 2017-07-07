@@ -1,6 +1,7 @@
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import $ from 'jquery';
+import StickyHeader from './modules/StickyHeader';
 
 var mobileMenu = new MobileMenu();
 
@@ -12,3 +13,5 @@ new RevealOnScroll($('.our-team'), '85%');
 
 //reveal about bks section
 //new RevealOnScroll($('.reveal-about-bks'), '70%');
+
+var stickyHeader = new StickyHeader();
