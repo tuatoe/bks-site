@@ -3,11 +3,11 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Benjamin Karmon Sehkar Foundation</title>
   <meta name="keywords" content="bks foundation, benjamin karmon sehkar foundation">
   <meta name="description" content="A group of Liberians residing in the US have established the Benjamin Karmon Sehkar Foundation Incorporated (BKS™). The BKS™ Foundation, as it is affectionately known, has been established in memory of the late Benjamin K. Sehkar. ">
-  <link href="assets/styles/styles.css" rel="stylesheet" type="text/css">
+  <link href="temp/styles/styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
@@ -21,20 +21,22 @@
                 
                 
                 <div class="site-header__menu-icon">
-                
+                    <div class="site-header__menu-icon__middle"></div>
                 </div>
                 
                 <div class="site-header__menu-content">
                        <div class="site-header__btn-container">
-                    <a href="#" class="btn open-modal">Get in Touch</a>
-                </div>
+                            <a href="#" class="btn open-modal">Donate Now</a>
+                        </div>
                 <div class="site-header__menu-content">
                     <nav class="primary-nav primary-nav--pull-right">
                         <ul>
                             <li><a href="#home" id="home-link">Home</a></li>
                             <li><a href="#about-us" id="about-us-link">About Us</a></li>
-                            <li><a href="#what-we-do" id="what-we-do-link">What We Do</a></li>
-                            <li><a href="#gallery" id="gallery-link">Gallery</a></li>
+                             <li><a href="#what-we-do" id="what-we-do-link">What We Do</a></li>
+                            <li><a href="#how-you-can-help" id="how-you-can-help-link">How You Can Help</a></li>
+                            <li><a href="#meet-team" id="our-team-link">Meet Our Team</a></li>
+                             <li><a href="#contact-us" id="contact-us-link">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -44,32 +46,69 @@
         <!--end header-->
         
         <!--hero banner-->
-        <div class="large-hero">
+        
+        
+        <div id="home" class="large-hero" data-matching-link="#home-link">
             <!--<picture>
                 <source srcset="assets/images/hero-large2.jpg" media="(min-width:1920px)">
                 <source srcset="assets/images/hero-medium2.jpg" media="(min-width:1200px)">
                 <img src="assets/images/hero-small2.jpg" alt="books">
             </picture>-->
-            <img srcset="assets/images/hero-small2.jpg 570px, assets/images/hero-medium2.jpg 1200w, assets/images/hero-large2.jpg 1920w" class="large-hero__image">
+            <img srcset="assets/images/hero-small-2.jpg 570px, assets/images/hero-medium-2.jpg 1200w, assets/images/hero-large-2.jpg 1920w" class="large-hero__image">
             
             <div class="large-hero__text-content">
                 <div class="wrapper">
                     <h1 class="large-hero__title">Equal access to quality Education</h1>
                     <p class="large-hero__description">Empowerment Through Education</p>
-                    <p><a href="#" class="btn btn--orange btn--large">Donate Now</a></p>
                 </div>
             </div>
         </div>
+        
+        <!--
+        <div class="quick-access">
+            <div class="wrapper">
+                <div class="row row--gutters row--gutters-large">
+                    <div class="row__medium-3 quick-access__member">
+                        <h3>BECOME A PARTNER FOR CHANGE</h3>
+                        <h4>GIVE MONTHLY NOW</h4>
+                        <p>Help save lives for just $19 a month.</p>
+                    </div>
+                    <div class="row__medium-3 quick-access__join">
+                         <h3>JOIN OUR MAILING LIST</h3>
+                         <span class="quick-access__join--sign-up">SIGN UP</span>
+                    </div>
+                    <div class="row__medium-3 quick-access__donate">
+                         <h3>DONATE NOW</h3>
+                    </div>
+                    <div class="row__medium-3 quick-access__connect">
+                        <div class="fast-access__connect-content social-icons social-icons--white">
+                        <h3>CONNECT</h3>
+                         <a href="#"><span class="fa fa-facebook"></span></a>
+                         <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-youtube"></span></a>
+                        <a href="#"><span class="fa fa-linkedin" ></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
         <!--end hero banner-->
 
         <!--start about bks-->
-        <div id="about-bks" class="page-section">
+        <div id="about-us" class="page-section about-bks" data-matching-link="#about-us-link">
             <div class="wrapper">
             <h2 class="section-title section-title--blue" >About <strong>BKS&trade; Foundation, Inc.</strong></h2>
-                <div class="wrapper wrapper--medium">
-                    <img src="assets/images/Benjamin-Karmon-Sehkar-large.jpg" alt="Benjamin Karomn Sehkar">
-                </div>
-                 <div class="generic-content-container">
+                <!--<div class="wrapper wrapper--medium reveal-about-bks">
+                    
+                </div>-->
+                 <div class="generic-content-container reveal-about-bks">
+                     <div class="about-bks__founder-img">
+                         <picture>
+                            <source  class="about-bks__benjamin" srcset="assets/images/Benjamin-Karmon-Sehkar-large.jpg 700w" media="(min-width:800px)" alt="Benjamin Karomn Sehkar">
+                            <source  class="about-bks__benjamin" srcset="assets/images/Benjamin-Karmon-Sehkar-medium.jpg 500w" media="(min-width:530px)" alt="Benjamin Karomn Sehkar">
+                            <img  class="about-bks__benjamin" src="assets/images/Benjamin-Karmon-Sehkar-small.jpg" alt="books" alt="Benjamin Karomn Sehkar">
+                        </picture>
+                     </div>
                     <p>
                         A group of Liberians residing in the US have established the Benjamin Karmon Sehkar Foundation Incorporated (BKS™). The BKS™ Foundation, as it is affectionately known, has been established in memory of the late Benjamin K. Sehkar. Sehkar was a broadcast journalist killed in 1990 at the height of the Liberian Civil War by Armed Forces of Liberia (AFL) soldiers during a popular uprising against the Samuel Kanyon Doe government. The Foundation was established with a focus on providing tuition assistance to disadvantaged and underprivileged children from rural Liberia, with Nimba County as the primary target for aid. BKS™ is headquartered in Monrovia, Liberia.
                      </p>
@@ -86,13 +125,13 @@
                      </p>
                 </div>
             </div>
-            <div class="wrapper">
+            <!--<div class="wrapper">
                 <div class="row row--gutters">
-                     <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+                     <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium reveal-about-bks">
                          <img src="assets/images/alvin-sehkar-bks-foundation-founder-large.jpg" alt="Alvin Sehkar">
                     </div>
                      <div class="row__medium-8 row__medium-8--smaller">
-                         <div class="generic-content-container">
+                         <div class="generic-content-container reveal-about-bks">
                          <h2 class="headline headline-light headline--no-t-margin">About Our <strong>Founder</strong></h2>
               
                             <p>
@@ -119,74 +158,20 @@
                          </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div> 
+        <!--end about bks-->
         
-        
-        
-        <div id="meet-team" class="page-section page-section--no-b-padding-until-large page-section--our-team page-section--blue">
-        <div class="wrapper wrapper--no-padding-until-large">
-                <h2 class="section-title section-title--blue">Meet Our <strong>Team</strong></h2>
-
-                <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container generic-content-container--gray-text">
-                    <div class="row__large-4">
-                        <div class="our-team">
-                            <div class="our-team__photo">
-                                 <img  src="assets/images/our-team-alvin-sehkar.jpg">
-                            </div>
-                             
-                            <h3 class="our-team__name">Alvin Sehkar</h3>
-                            <h4 class="our-team__position">Founder</h4>
-                            <p>
-                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
-                            </p>
-                        </div>
-                    </div>
-                    
-                     <div class="row__large-4">
-                         <div class="our-team">
-                            <div class="our-team__photo">
-                                <img  src="assets/images/our-team-alvin-sehkar.jpg">
-                             </div>
-                             
-                           <h3 class="our-team__name">Alvin Sehkar</h3>
-                            <h4 class="our-team__position">Founder</h4>
-                            <p>
-                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
-                            </p>
-                        </div>
-                    </div>
-                    
-                     <div class="row__large-4">
-                        <div class="our-team">
-                            <div class="our-team__photo">
-                                 <img  src="assets/images/our-team-alvin-sehkar.jpg">
-                            </div>
-                             
-                           <h3 class="our-team__name">Alvin Sehkar</h3>
-                            <h4 class="our-team__position">Founder</h4>
-                            <p>
-                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end about bks -->
-        
+         
         <!--start what we do-->
-        
-        <div id="what-we-do" class="page-section page-section--blue">
-            
-            
+        <div id="what-we-do" class="page-section page-section--blue" data-matching-link="#what-we-do-link">
              <div class="wrapper">
-                 <h2 class="section-title section-title--white">What we <strong>do</strong></h2>
+                 <h2 class="section-title section-title--white">What We <strong>Do</strong></h2>
                 <div class="row row--gutters">
-                     <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+                     <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium reveal-what-we-do">
                         <img src="assets/images/StockSnap_T2SO7MDTYS.jpg">
                     </div>
-                     <div class="row__medium-8 row__medium-8--smaller">
+                     <div class="row__medium-8 row__medium-8--smaller reveal-what-we-do">
                          <div class="generic-content-container generic-content-container--white-text">
                         <p>
                         The BKS&trade; Foundation, Inc. provides scholarships to underprivileged and disadvantaged students to attend all major universities and colleges in Liberia. BKS Foundation is also partnering with some major high schools in the rural parts of the country to provide tuition assistance to students who meet its scholarship requirements. In addition to the aforementioned, we provide school supplies (notebooks, pencil, backpacks, crayons, rulers, etc.) to the disadvantaged students in Liberia. BKS&trade; Foundation, Inc., in partnership with the Messiah Christian Academy (located in Ganta City, Nimba County), awards tuition assistance to disadvantaged and underprivileged students from the Buu-Yao District, Nimba County, Liberia. This scholarship continues the legacy of Mr. Benjamin K. Sehkar, who hailed from the Buu-Yao area.
@@ -206,22 +191,223 @@
         </div>
         <!--end what we do-->
         
+        <!--start how you can help-->
+        <div id="how-you-can-help" class="page-section page-section--orange" data-matching-link="#how-you-can-help-link">
+            
+            <div class="wrapper">
+                <h2 class="section-title section-title--white">How You <strong>Can Help</strong></h2>
+                <div class="row row--gutters">
+                    <div class="row__medium-6 row__medium-6--smaller reveal-what-we-do">
+                        <div class="generic-content-container generic-content-container--white-text">
+                            <h4>You Can Make A Difference</h4>
+                            <p>There are many ways you could get involved and make a lasting difference. Below are some of the ways you could help us make a difference in the lives of the underprivileged and disadvantaged children in Liberia: Follow our progress on our website, Facebook, Instagram and Twitter. Help us spread the word.</p>
+
+                            <h4>Make BKS&trade; Foundation, Inc. the Charity of Your Choice</h4>
+                            <p>Talk to your school/college/church/university/company to select BKS™ Foundation, Inc. as their charity of choice for donations. To promote our partnership, we will provide you with our organization’s logo and merchandise to help promote our partnership.</p>
+                        </div>
+                    </div>
+                    
+                     <div class="row__medium-6 row__medium-6--larger row__b-margin-until-medium reveal-what-we-do">
+                        <iframe src="//player.vimeo.com/video/114137841?title=0&byline=0&portrait=0" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><i>12/07/2014, Alvin Sehkar's Story from Northview Church</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end how you can help-->
+        
+        
+        <!--start meet our team-->
+        <div id="meet-team" class="page-section page-section--no-b-padding-until-large page-section--our-team page-section--orange" data-matching-link="#our-team-link">
+        <div class="wrapper wrapper--no-padding-until-large">
+            
+                <h2 class="section-title section-title--blue">Meet Our <strong>Team</strong></h2>
+
+                <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container generic-content-container--gray-text">
+                    <div class="row__large-4">
+                        <div class="our-team">
+                            <div class="our-team__photo">
+                                 <img  src="assets/images/our-team-alvin-sehkar.jpg">
+                            </div>
+                             
+                            <h3 class="our-team__name">Alvin Sehkar</h3>
+                            <h4 class="our-team__position">Founder</h4>
+                            <p>
+                            Alvin Sehkar is an advocate for underprivileged education and a social entrepreneur from Liberia. Upon Mr. Alvin Sehkar’s arrival in the United States 11 years ago, he made a promise to gratefully, proudly and gracefully tell his story...
+                            </p>
+                            <span class="our-team__learn-more">Learn More</span>
+                        </div>
+                    </div>
+                    
+                     <div class="row__large-4">
+                         <div class="our-team">
+                            <div class="our-team__photo">
+                                <img  src="assets/images/our-team-place-holder.jpg">
+                             </div>
+                             
+                           <h3 class="our-team__name">Abdu S. Mulibah</h3>
+                            <h4 class="our-team__position">Administrative Officer</h4>
+                            <p>
+                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
+                            </p>
+                        </div>
+                    </div>
+                    
+                     <div class="row__large-4">
+                        <div class="our-team">
+                            <div class="our-team__photo">
+                                <img  src="assets/images/our-team-place-holder.jpg">
+                            </div>
+                             
+                           <h3 class="our-team__name">Neabei Toah</h3>
+                            <h4 class="our-team__position">Projects Coordinator</h4>
+                            <p>
+                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+             <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container generic-content-container--gray-text">
+                    <div class="row__large-4">
+                        <div class="our-team">
+                            <div class="our-team__photo">
+                                 <img  src="assets/images/our-team-place-holder.jpg">
+                            </div>
+                             
+                            <h3 class="our-team__name">Tunde Saibu</h3>
+                            <h4 class="our-team__position">Accounts Officer</h4>
+                            <p>
+                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
+                            </p>
+                        </div>
+                    </div>
+                    
+                     <div class="row__large-4">
+                         <div class="our-team">
+                            <div class="our-team__photo">
+                                <img  src="assets/images/our-team-place-holder.jpg">
+                             </div>
+                             
+                           <h3 class="our-team__name">Mr. Chester Sehkar</h3>
+                            <h4 class="our-team__position">Public Relation Officer</h4>
+                            <p>
+                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
+                            </p>
+                        </div>
+                    </div>
+                    
+                     <div class="row__large-4">
+                        <div class="our-team">
+                            <div class="our-team__photo">
+                                 <img  src="assets/images/our-team-place-holder.jpg">
+                            </div>
+                             
+                           <h3 class="our-team__name">Dr. Suzanne Rose</h3>
+                            <h4 class="our-team__position">Advisory Board</h4>
+                            <p>
+                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container generic-content-container--gray-text">
+                    <div class="row__large-4">
+                        <div class="our-team">
+                            <div class="our-team__photo">
+                                 <img  src="assets/images/our-team-dr-scott-allison.jpg">
+                            </div>
+                             
+                            <h3 class="our-team__name">Dr. Scott Allison</h3>
+                            <h4 class="our-team__position">Advisory Board</h4>
+                            <p>
+                             Dr. Alison was born and raised in Sullivan, Indiana He studied Biology at Butler and DePauw Universities while playing basketball at both schools. He holds a Doctoral Degree in Optometry from Illinois College of Optometry...
+                            </p>
+                            <span class="our-team__learn-more">Learn More</span>
+                        </div>
+                    </div>
+                    
+                     <div class="row__large-4">
+                         <div class="our-team">
+                            <div class="our-team__photo">
+                                <img  src="assets/images/our-team-zeambo-dahnweih.jpg">
+                             </div>
+                             
+                           <h3 class="our-team__name">Mr. Zeambo Dahnweih</h3>
+                            <h4 class="our-team__position">Advisory Board</h4>
+                            <p>
+                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
+                            </p>
+                        </div>
+                    </div>
+                    
+                     <div class="row__large-4">
+                        <div class="our-team">
+                            <div class="our-team__photo">
+                                 <img  src="assets/images/our-team-toby-eiler.jpg">
+                            </div>
+                             
+                           <h3 class="our-team__name">Mr. Toby Eiler</h3>
+                            <h4 class="our-team__position">Advisory Board</h4>
+                            <p>
+                            Mr. Toby Eiler, was born in Valparaiso, IN and grew up in a very small town called Hebron, Indiana. During High School, he played baseball, basketball, and ran cross country.  After graduating HS he went to college at Rose-Hulman in Terre Haute, IN to get his degree in Electrical Engineering...
+                            </p>
+                             <span class="our-team__learn-more">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end meet our team-->
+       
        
         
         <!--start contact us-->
-        
-         <div id="contact-us" class="page-section">
+         <div id="contact-us" class="page-section" data-matching-link="#contact-us-link">
             <div class="wrapper">
-                <h2 class="headline headline--centered">Contact <strong>Us</strong></h2>
+                <h2 class="section-title section-title--blue" >Contact <strong>Us</strong></h2>
+                <script type="text/javascript" src="http://form.jotform.us/jsform/50254986298166"></script>
             </div>
         </div>
-        
-        
+        <!--end contact us-->
+      
         <footer class="site-footer">
             <div class="wrapper">
-                <p><span class="site-footer__text">&copy;2017 BKS&trade; Foundation, Inc. </span><a href="#" class="btn btn--orange">Get in Touch</a></p>
+                 <div class="site-footer__social-media-icons">
+                    <a href="#"><span class="fa fa-facebook-official"></span></a>
+                    <a href="#"><span class="fa fa-twitter-square"></span></a>
+                    <a href="#"><span class="fa fa-youtube-square"></span></a>
+                </div>
+                <p>
+                    <span class="site-footer__text">&copy;2017 BKS&trade; Foundation, Inc. </span>
+                    <a href="#" class="btn btn--orange open-modal">Donate Now</a>
+                    <!--<img class="site-footer__501c-seal" src="assets/images/501c3_Seal.png" alt="501c seal">-->
+                </p>
+                
             </div>
         </footer>
-        <script src="assets/scripts/App.js"></script>
+        
+          <!--donate-->
+        <div class="modal" id="donate">
+                 <div class="modal__inner">
+                    <h2 class="section-title section-title-blue section-title--less-margin">Donate <strong>Now</strong></h2>
+                <div class="wrapper wrapper--narrow">
+                    <p class="modal__description">Please fill out this form and we will get in touch with you shortly.</p>
+                    <div class="social-icons">
+                        <a href="#"><span class="fa fa-twitter-square"></span></a>
+                        <a href="#"><span class="fa fa-facebook-official"></span></a>
+                        <a href="#"><span class="fa fa-youtube-square"></span></a>
+                        <a href="#"><span class="fa fa-youtube-square"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                    </div>
+                </div>
+                </div>
+         
+                <div class="modal__close">x</div>
+           
+        </div>
+        <!--end donate-->
+        
+        <script src="temp/scripts/App.js"></script>
     </body>
 </html>

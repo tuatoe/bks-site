@@ -21,16 +21,17 @@
     color:#FFF;
   }
     &--orange{
-        background-color:$mainGreen;
+        background-color:$mainOrange;
         color:#FFF;
+    }
+    &--bright-orange{
+        background-color:$brightOrange;
     }
     
     &--our-team{
        background-color:@lightBlue;
-        
-        @mixin atMedium{
-              background:url('/assets/images/mont-nimba.jpg') top center no-repeat;
-            background-size: cover;
-        }
+        background:url('/assets/images/our-team-bg.jpg') top center no-repeat;
+        background-size: cover;
+       
     }
 }

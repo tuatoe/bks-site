@@ -610,7 +610,7 @@ a{
     padding-right:0;
   }
 
-@media(min-width:1010){
+@media(min-width:1010px){
 
 .wrapper--no-padding-until-large{
       padding-left:18px;
@@ -660,7 +660,7 @@ a{
     padding-bottom:0;
   }
 
-@media(min-width:1010){
+@media(min-width:1010px){
 
 .page-section--no-b-padding-until-large{
       padding-bottom:4.5rem
@@ -677,9 +677,13 @@ a{
         color:#FFF;
     }
 
+.page-section--bright-orange{
+        background-color:#f9781c;
+    }
+
 .page-section--our-team{
        background-color:@lightBlue;
-        background:url('/assets/images/mont-nimba.jpg') top center no-repeat;
+        background:url('/assets/images/our-team-bg.jpg') top center no-repeat;
         background-size: cover;
        
     }
@@ -785,6 +789,21 @@ a{
     .row__b-margin-until-medium {
         margin-bottom:0;
     }
+       .row__medium-3--smaller{
+          float:left;
+          width:21%;
+      }
+      
+      .row__medium-3{
+          float:left;
+          width:25%;
+      }
+      
+      
+    .row__medium-3--larger {
+      width:29%;
+    }
+      
     .row__medium-4 {
       float:left;
       width:33.33%;
@@ -809,10 +828,21 @@ a{
     }
     }
 
-@media(min-width:1010){
+@media(min-width:1010px){
 
     .row__b-margin-until-medium {
         margin-bottom:0;
+    }
+      
+
+      .row__large-3{
+          float:left;
+          width:25%;
+      }
+      
+      
+    .row__large-3--larger {
+      width:29%;
     }
     .row__large-4 {
       float:left;
@@ -927,17 +957,23 @@ a{
         color:#FFF;
     }
 
+.section-title--less-margin{
+        margin-bottom:1rem;
+        margin-top:0;
+    }
+
 .our-team{
    background-color:rgba(255,255,255,.8); 
-   padding:0 15px 1px 15px;
+   padding:0 15px 20px 15px;
    margin-bottom:98px;
+    text-align: center;
 }
 
-@media(min-width:1010){
+@media(min-width:1010px){
 
 .our-team{
-         padding:0 1.8125rem 1px 1.8125rem;
-         margin-bottom:0
+         padding:0 1.8125rem 20px 1.8125rem;
+         margin-bottom:45px
 }
     }
 
@@ -972,11 +1008,26 @@ a{
         margin-bottom: 0;
     }
 
+.our-team__learn-more{
+        background-color:#df8f27;
+        color:#FFF;
+        padding:5px 8px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        
+    }
+
+.our-team__learn-more:hover{
+            background-color: #2f5572;
+        }
+
 .site-footer{
     background-color:#2f5572;
     color:#FFF;
     padding: .5rem 0;
     text-align: center;
+    position: relative;
 }
 
 .site-footer__text{
@@ -993,6 +1044,22 @@ a{
             margin-right:1.4rem
     }
     }
+
+.site-footer__501c-seal{
+        margin-top:15px;
+        display: inline-block;
+        position: absolute;
+        bottom:12px;
+        margin-left:15px;
+    }
+
+.site-footer__social-media-icons{
+        font-size:2.5rem;
+    }
+
+.site-footer__social-media-icons a:hover{
+                color:#7da640;
+            }
 
 .site-header{
     padding:10px 0;
@@ -1011,7 +1078,7 @@ a{
 
 .site-header{
         position: fixed;
-        background-color:rgba(47,85,114, .7)
+        background-color:rgba(47,85,114, .6)
 }
         
         .site-header--dark{
@@ -1027,7 +1094,7 @@ a{
     }
 
 .site-header__btn-container a{
-              background-color:#7da640;
+              background-color:#df8f27;
         }
 
 .site-header__logo{
@@ -1257,6 +1324,7 @@ a{
         padding: 8px 10px;
         font-size:.85rem;
         background-color:rgba(47,85,114, .8);
+        margin-bottom:10px;
     }
 
 @media(min-width:800px){
@@ -1264,7 +1332,8 @@ a{
 .primary-nav a {
             font-size:1rem;
              padding:9px 0;
-            background-color: transparent
+            background-color: transparent;
+            margin-bottom:0
     }
             
             .primary-nav a.is-current-link{
@@ -1289,5 +1358,228 @@ a{
         -webkit-transform: scale(1);
                 transform: scale(1);
     }
+
+.modal{
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255,255,255,.94);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.modal__description{
+        text-align: center;
+        font-size:1.3rem;
+        color:#555;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+.modal__close{
+        position: absolute;
+        top:15px;
+        right:15px;
+        font-size:2rem;
+        color:#2f5572;
+        -webkit-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+        -webkit-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+        cursor: pointer;
+    }
+
+.modal__close:hover{
+            color:#df8f27;
+        }
+
+.modal__inner{
+        position: absolute;
+        width:100%;
+        top:50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+
+.modal--is-visible{
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
+.social-icons {
+    margin:0 auto;
+    text-align: center;
+}
+
+.social-icons a {
+        display: inline-block;
+        font-size: 2rem;
+        margin-right: .2rem;
+        width: 36%;
+        height: 60px;
+        border: 2px solid #fff;
+        padding: 10px 15px;
+        margin-bottom: .6rem;
+    
+       
+    }
+
+.social-icons a:hover {
+            color:#2f5572;
+        }
+
+@media(min-width:530px){
+
+.social-icons a {
+            width: 36%;
+             padding:10px 15px
+    
+       
+    }
+    }
+
+@media(min-width:800px){
+
+.social-icons a {
+            width:32%;
+            padding:5px 15px;
+            font-size:1.5rem;
+              height:40px
+    
+       
+    }
+    }
+
+@media(min-width:1010px){
+
+.social-icons a {
+            padding:5px;
+            height:40px;
+            width: 26%
+    
+       
+    }
+    }
+
+.social-icons--white a{
+            color: #FFF;
+        }
+
+.about-bks__founder-img{
+        width:500px;
+        height:500px;
+        margin:0 auto;
+        padding-bottom:15px;
+        max-width: 100%;
+    }
+
+.about-bks__benjamin{
+        width:500px;
+        height:500px;
+        border-radius: 250px;
+        overflow: hidden;
+        margin:0 auto;
+    }
+
+.quick-access{
+    background-color:#fef0d3;
+    padding:15px 0;
+    position: relative;
+}
+
+.quick-access__member{
+        position: relative;
+        background-color: #83389b;
+        color:#FFF;
+        padding:20px 20px 10px 20px;
+    }
+
+.quick-access__member h3{
+            font-size:1.4rem;
+            margin-top:0;
+            margin-bottom:5px;
+             display: block;
+        }
+
+.quick-access__member h4{
+            margin-top:0;
+            margin-bottom:5px;
+        }
+
+.quick-access__member p{
+            line-height: 1rem;
+            margin:0;
+            padding:0;
+        }
+
+.quick-access__join{
+        background-color: #0081ab;
+        color:#FFF;
+        padding:20px 20px 10px 20px;
+    }
+
+.quick-access__join h3{
+            font-size:1.4rem;
+            margin-top:0;
+        }
+
+.quick-access__join h4{
+            margin-top:0;
+             padding:0;
+            font-size:4rem;
+        }
+
+.quick-access__join--sign-up{
+            background-color:#FFF;
+            color:#2f5572;
+            padding:5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+.quick-access__join--sign-up:hover{
+                background:#7da640;
+                color:#FFF;
+            }
+
+.quick-access__donate{
+         background-color: #ab1355;
+         color:#FFF;
+         padding:20px 20px 10px 20px;
+    }
+
+.quick-access__donate h3{
+            font-size:1.2rem;
+            margin-top:0;
+             margin-bottom:0;
+              padding:0;
+        }
+
+.quick-access__connect{
+         background-color: #f9a01f;
+        color:#FFF;
+        padding:20px 20px 10px 20px;
+        
+    }
+
+.quick-access__connect h3{
+            font-size:1.2rem;
+            margin-top:0;
+             margin-bottom:0;
+        }
+
+.donate{
+   
+}
+
 
 

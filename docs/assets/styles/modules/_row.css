@@ -38,6 +38,21 @@
     &__b-margin-until-medium {
         margin-bottom:0;
     }
+       &__medium-3--smaller{
+          float:left;
+          width:21%;
+      }
+      
+      &__medium-3{
+          float:left;
+          width:25%;
+      }
+      
+      
+    &__medium-3--larger {
+      width:29%;
+    }
+      
     &__medium-4 {
       float:left;
       width:33.33%;
@@ -60,6 +75,8 @@
     &__medium-8--smaller{
       width:63%;
     }
+      
+      
 
   }
 
@@ -67,6 +84,17 @@
 
     &__b-margin-until-medium {
         margin-bottom:0;
+    }
+      
+
+      &__large-3{
+          float:left;
+          width:25%;
+      }
+      
+      
+    &__large-3--larger {
+      width:29%;
     }
     &__large-4 {
       float:left;

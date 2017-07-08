@@ -1,11 +1,12 @@
 .our-team{
    background-color:rgba(255,255,255,.8); 
-   padding:0 15px 1px 15px;
+   padding:0 15px 20px 15px;
    margin-bottom:98px;
+    text-align: center;
     
     @mixin atLarge{
-         padding:0 1.8125rem 1px 1.8125rem;
-         margin-bottom:0;
+         padding:0 1.8125rem 20px 1.8125rem;
+         margin-bottom:45px;
     }
     
     &__photo{
@@ -36,5 +37,18 @@
     
     &--last{
         margin-bottom: 0;
+    }
+    &__learn-more{
+        background-color:$mainOrange;
+        color:#FFF;
+        padding:5px 8px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        
+        &:hover{
+            background-color: $mainBlue;
+        }
+        
     }
 }

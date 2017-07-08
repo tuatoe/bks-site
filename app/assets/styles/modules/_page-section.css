@@ -24,10 +24,13 @@
         background-color:$mainOrange;
         color:#FFF;
     }
+    &--bright-orange{
+        background-color:$brightOrange;
+    }
     
     &--our-team{
        background-color:@lightBlue;
-        background:url('/assets/images/mont-nimba.jpg') top center no-repeat;
+        background:url('/assets/images/our-team-bg.jpg') top center no-repeat;
         background-size: cover;
        
     }
