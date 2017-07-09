@@ -1500,7 +1500,7 @@ a{
         position: relative;
         background-color: #83389b;
         color:#FFF;
-        padding:20px 20px 10px 20px;
+        padding:20px;
     }
 
 .quick-access__member h3{
@@ -1524,7 +1524,7 @@ a{
 .quick-access__join{
         background-color: #0081ab;
         color:#FFF;
-        padding:20px 20px 10px 20px;
+        padding:20px;
     }
 
 .quick-access__join h3{
@@ -1554,7 +1554,7 @@ a{
 .quick-access__donate{
          background-color: #ab1355;
          color:#FFF;
-         padding:20px 20px 10px 20px;
+         padding:20px;
     }
 
 .quick-access__donate h3{
@@ -1567,7 +1567,7 @@ a{
 .quick-access__connect{
          background-color: #f9a01f;
         color:#FFF;
-        padding:20px 20px 10px 20px;
+        padding:20px;
         
     }
 
