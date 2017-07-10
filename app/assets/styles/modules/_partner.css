@@ -1,0 +1,27 @@
+.partner{
+    background-color:$brightOrange;
+    padding:15px;
+    text-align: left;
+    
+    h2{
+        text-transform: uppercase;
+        color:#FFF;
+        font-size:2rem;
+        font-weight: 500;
+        margin-top:.5em;
+        margin-bottom:.3em;
+    }
+    h3{
+         text-transform: uppercase;
+        color:#FFF;
+        font-weight: 300;
+        font-size:1.5rem;
+        margin-top:0;
+        margin-bottom:.3em;
+    }
+    p{
+        line-height: 1;
+        margin:0;
+        padding:0;
+    }
+}

@@ -765,7 +765,7 @@ a{
 }
 
 .row--gutters-small{
-  margin-right:-45px;
+  margin-right:-25px;
 }
 
 .row--gutters > div{
@@ -777,7 +777,7 @@ a{
 }
 
 .row--gutters-small > div{
-  padding-right:45px;
+  padding-right:25px;
 }
 
 .row__b-margin-until-medium{
@@ -1015,12 +1015,22 @@ a{
         text-align: center;
         border-radius: 4px;
         cursor: pointer;
+        position: absolute;
+        left: 50%;
+        right:0;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        bottom:15px;
         
     }
 
 .our-team__learn-more:hover{
             background-color: #2f5572;
         }
+
+.our-team p{
+        padding-bottom:10px;
+    }
 
 .site-footer{
     background-color:#2f5572;
@@ -1500,7 +1510,7 @@ a{
         position: relative;
         background-color: #83389b;
         color:#FFF;
-        padding:20px 20px 10px 20px;
+        padding:20px;
     }
 
 .quick-access__member h3{
@@ -1524,7 +1534,7 @@ a{
 .quick-access__join{
         background-color: #0081ab;
         color:#FFF;
-        padding:20px 20px 10px 20px;
+        padding:20px;
     }
 
 .quick-access__join h3{
@@ -1554,7 +1564,7 @@ a{
 .quick-access__donate{
          background-color: #ab1355;
          color:#FFF;
-         padding:20px 20px 10px 20px;
+         padding:20px;
     }
 
 .quick-access__donate h3{
@@ -1567,7 +1577,7 @@ a{
 .quick-access__connect{
          background-color: #f9a01f;
         color:#FFF;
-        padding:20px 20px 10px 20px;
+        padding:20px;
         
     }
 
@@ -1580,5 +1590,35 @@ a{
 .donate{
    
 }
+
+.partner{
+    background-color:#f9781c;
+    padding:15px;
+    text-align: left;
+}
+
+.partner h2{
+        text-transform: uppercase;
+        color:#FFF;
+        font-size:2rem;
+        font-weight: 500;
+        margin-top:.5em;
+        margin-bottom:.3em;
+    }
+
+.partner h3{
+         text-transform: uppercase;
+        color:#FFF;
+        font-weight: 300;
+        font-size:1.5rem;
+        margin-top:0;
+        margin-bottom:.3em;
+    }
+
+.partner p{
+        line-height: 1;
+        margin:0;
+        padding:0;
+    }
 
 
