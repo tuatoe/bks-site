@@ -10329,7 +10329,7 @@ return jQuery;
 
 /*!
 Waypoints - 4.0.1
-Copyright Â© 2011-2016 Caleb Troughton
+Copyright © 2011-2016 Caleb Troughton
 Licensed under the MIT license.
 https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 */
@@ -11392,8 +11392,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       this.each(function() {
         // If no scrollable elements and <html> has scroll-behavior:smooth because
         // "When this property is specified on the root element, it applies to the viewport instead."
-        // and "The scroll-behavior property of the â€¦ body element is *not* propagated to the viewport."
-        // â†’ https://drafts.csswg.org/cssom-view/#propdef-scroll-behavior
+        // and "The scroll-behavior property of the … body element is *not* propagated to the viewport."
+        // → https://drafts.csswg.org/cssom-view/#propdef-scroll-behavior
         if (this === document.documentElement && $(this).css('scrollBehavior') === 'smooth') {
           scrollable = [this];
         }
