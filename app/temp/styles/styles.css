@@ -1592,10 +1592,16 @@ a{
 }
 
 .partner{
-    background-color:#f9781c;
     padding:15px;
-    text-align: left;
+    text-align: center;
+   background:url('/assets/images/partner-bg.png') #f9781c top center no-repeat;
+        background-size: cover;
 }
+
+.partner__content{
+        max-width:600px;
+        margin:0 auto;
+    }
 
 .partner h2{
         text-transform: uppercase;
@@ -1616,9 +1622,13 @@ a{
     }
 
 .partner p{
-        line-height: 1;
         margin:0;
         padding:0;
+        color:#FFF;
+    }
+
+.contact p{
+        text-align: center;
     }
 
 
