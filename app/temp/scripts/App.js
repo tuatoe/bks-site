@@ -61,7 +61,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11212,7 +11212,7 @@ class RevealOnScroll{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_waypoints_lib_noframework_waypoints__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_waypoints_lib_noframework_waypoints___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_waypoints_lib_noframework_waypoints__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery_smooth_scroll__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery_smooth_scroll__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery_smooth_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery_smooth_scroll__);
 
 
@@ -11284,7 +11284,21 @@ class StickyHeader{
 /* harmony default export */ exports["a"] = StickyHeader;
 
 /***/ },
-/* 6 */
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11648,7 +11662,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ },
-/* 7 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
