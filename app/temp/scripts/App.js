@@ -11221,6 +11221,7 @@ class RevealOnScroll{
 
 class StickyHeader{
     constructor(){
+        this.lazyImages = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.lazyload');
         this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.site-header');
         this.headerTriggerElement = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.large-hero__title');
         this.createHeaderWaypoint();
@@ -11228,6 +11229,13 @@ class StickyHeader{
         this.headerLinks = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.primary-nav a');
         this.createPageSectionWaypoints();
         this.addSmoothscrolling();
+        this.refreshWaypoints();
+    }
+    
+    refreshWaypoints(){
+        this.lazyImages.load(function(){
+            Waypoint.refreshAll();
+        });
     }
     
     addSmoothscrolling(){
@@ -11686,10 +11694,10 @@ var mobileMenu = new __WEBPACK_IMPORTED_MODULE_1__modules_MobileMenu__["a" /* de
 new __WEBPACK_IMPORTED_MODULE_2__modules_RevealOnScroll__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.our-team'), '85%');
 
 //reveal what we do section
-//new RevealOnScroll($('.reveal-what-we-do'), '70%');
+new __WEBPACK_IMPORTED_MODULE_2__modules_RevealOnScroll__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.reveal-what-we-do'), '70%');
 
 //reveal about bks section
-//new RevealOnScroll($('.reveal-about-bks'), '70%');
+new __WEBPACK_IMPORTED_MODULE_2__modules_RevealOnScroll__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.reveal-about-bks'), '70%');
 
 var stickyHeader = new __WEBPACK_IMPORTED_MODULE_3__modules_StickyHeader__["a" /* default */]();
 
