@@ -577,6 +577,11 @@ a{
         background-color:#df8f27;
     }
 
+.btn--donate{
+        background-color:transparent;
+        padding:8px 0 0 0;
+    }
+
 .btn--large{
         padding:1.1rem 1.9rem;
     }
@@ -1112,16 +1117,19 @@ a{
         }
     }
 
+.site-header__btn-container{
+        
+        /*a{
+              background-color:$mainOrange;
+        }*/
+    }
+
 @media(min-width:800px){
 
 .site-header__btn-container{
              float:right
     }
     }
-
-.site-header__btn-container a{
-              background-color:#df8f27;
-        }
 
 .site-header__logo{
         position: absolute;

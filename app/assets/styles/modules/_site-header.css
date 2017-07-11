@@ -24,9 +24,9 @@
              float:right;
         }
         
-        a{
+        /*a{
               background-color:$mainOrange;
-        }
+        }*/
     }
     
     &__logo{
