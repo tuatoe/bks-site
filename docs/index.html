@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Benjamin Karmon Sehkar Foundation</title>
   <meta name="keywords" content="bks foundation, benjamin karmon sehkar foundation">
-  <meta name="description" content="A group of Liberians residing in the US have established the Benjamin Karmon Sehkar Foundation Incorporated (BKS™). The BKS™ Foundation, as it is affectionately known, has been established in memory of the late Benjamin K. Sehkar. ">
+  <meta name="description" content="A group of Liberians residing in the US have established the Benjamin Karmon Sehkar Foundation Incorporated (BKS™). The BKS™ Foundation, as it is affectionately known, has been established in memory of the late Benjamin K. Sehkar.">
   <link href="temp/styles/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="temp/scripts/Vendor.js"></script>
     </head>
 
     <body>
@@ -44,31 +46,72 @@
             </div>
         </header>
         <!--end header-->
-        <div class="wrapper">
-            <div class="row">
-                <div class="row__medium-6"></div>
-                 <div class="row__medium-6"></div>
-            </div>
-        </div>
+       
         <!--hero banner-->
+    
+        <div id="myCarousel" class="carousel slide large-hero" data-ride="carousel"  data-matching-link="#home-link">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                 <img srcset="assets/images/hero-small-2.jpg 570px, assets/images/hero-medium-2.jpg 1200w, assets/images/hero-large-2.jpg 1920w" class="large-hero__image">
+                  <div class="large-hero__text-content">
+                    <div class="wrapper">
+                        <h1 class="large-hero__title">Equal access to quality Education</h1>
+                        <p class="large-hero__description">Empowerment Through Education</p>
+                    </div>
+                   </div>
+              </div>
+
+              <div class="item">
+                <img srcset="assets/images/hero-small-2.jpg 570px, assets/images/hero-medium-2.jpg 1200w, assets/images/hero-large-2.jpg 1920w" class="large-hero__image">
+                 <div class="large-hero__text-content">
+                    <div class="wrapper">
+                        <h1 class="large-hero__title">Equal access to quality Education</h1>
+                        <p class="large-hero__description">Empowerment Through Education</p>
+                    </div>
+                   </div>
+              </div>
+
+              <div class="item">
+                 <img srcset="assets/images/hero-small-2.jpg 570px, assets/images/hero-medium-2.jpg 1200w, assets/images/hero-large-2.jpg 1920w" class="large-hero__image">
+               <div class="large-hero__text-content">
+                    <div class="wrapper">
+                        <h1 class="large-hero__title">Equal access to quality Education</h1>
+                        <p class="large-hero__description">Empowerment Through Education</p>
+                    </div>
+                   </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="fa fa-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="fa fa-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         
-        
-        <div id="home" class="large-hero" data-matching-link="#home-link">
+
             <!--<picture>
                 <source srcset="assets/images/hero-large2.jpg" media="(min-width:1920px)">
                 <source srcset="assets/images/hero-medium2.jpg" media="(min-width:1200px)">
                 <img src="assets/images/hero-small2.jpg" alt="books">
+
+
+ 
             </picture>-->
-            <img srcset="assets/images/hero-small-2.jpg 570px, assets/images/hero-medium-2.jpg 1200w, assets/images/hero-large-2.jpg 1920w" class="large-hero__image">
-            
-            <div class="large-hero__text-content">
-                <div class="wrapper">
-                    <h1 class="large-hero__title">Equal access to quality Education</h1>
-                    <p class="large-hero__description">Empowerment Through Education</p>
-                </div>
-            </div>
-        </div>
         
+    
         
         <!--<div class="quick-access">
             <div class="wrapper">
@@ -128,9 +171,9 @@
                  <div class="generic-content-container reveal-about-bks">
                      <div class="about-bks__founder-img">
                          <picture>
-                            <source  class="about-bks__benjamin" srcset="assets/images/Benjamin-Karmon-Sehkar-large.jpg 700w" media="(min-width:1010px)" alt="Benjamin Karomn Sehkar">
-                            <source  class="about-bks__benjamin" srcset="assets/images/Benjamin-Karmon-Sehkar-medium.jpg 500w" media="(min-width:800px)" alt="Benjamin Karomn Sehkar">
-                            <img  class="about-bks__benjamin" src="assets/images/Benjamin-Karmon-Sehkar-small.jpg" alt="books" alt="Benjamin Karomn Sehkar">
+                            <source  class="about-bks__benjamin lazyload" data-srcset="assets/images/Benjamin-Karmon-Sehkar-large.jpg 700w" media="(min-width:1010px)" alt="Benjamin Karomn Sehkar">
+                            <source  class="about-bks__benjamin lazyload" data-srcset="assets/images/Benjamin-Karmon-Sehkar-medium.jpg 500w" media="(min-width:800px)" alt="Benjamin Karomn Sehkar">
+                            <img  class="about-bks__benjamin lazyload" data-src="assets/images/Benjamin-Karmon-Sehkar-small.jpg" alt="books" alt="Benjamin Karomn Sehkar">
                         </picture>
                      </div>
                     <p>
@@ -194,9 +237,9 @@
                 <div class="row row--gutters row--gutters-small">
                      <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium reveal-what-we-do">
                         <picture>
-                            <source srcset="assets/images/what-we-do-large.jpg" media="(min-width:1010x)"  alt="group of Children">
-                            <source srcset="assets/images/what-we-do-portrait.jpg" media="(min-width:800px)"  alt="group of Children">
-                            <img src="assets/images/what-we-do-small.jpg" alt="group of Children">
+                            <source class="lazyload" data-srcset="assets/images/what-we-do-large.jpg" media="(min-width:1010x)"  alt="group of Children">
+                            <source class="lazyload" data-srcset="assets/images/what-we-do-portrait.jpg" media="(min-width:800px)"  alt="group of Children">
+                            <img class="lazyload" data-src="assets/images/what-we-do-small.jpg" alt="group of Children">
                         </picture>
                     </div>
                      <div class="row__medium-8 row__medium-8--smaller reveal-what-we-do">
@@ -245,7 +288,7 @@
         
         
         <!--start meet our team-->
-        <div id="meet-team" class="page-section page-section--no-b-padding-until-large page-section--our-team page-section--orange" data-matching-link="#our-team-link">
+        <div id="meet-team" class="page-section page-section--no-b-padding-until-large page-section--our-team page-section--orange lazyload" data-matching-link="#our-team-link">
         <div class="wrapper wrapper--no-padding-until-large">
             
                 <h2 class="section-title section-title--blue">Meet Our <strong>Team</strong></h2>
@@ -254,7 +297,7 @@
                     <div class="row__large-4">
                         <div class="our-team">
                             <div class="our-team__photo">
-                                 <img  src="assets/images/our-team-alvin-sehkar.jpg">
+                                 <img class="lazyload" sizes="160px"  data-src="assets/images/our-team-alvin-sehkar.jpg" alt="Alvin Sehkar">
                             </div>
                              
                             <h3 class="our-team__name">Alvin Sehkar</h3>
@@ -269,13 +312,13 @@
                       <div class="row__large-4">
                         <div class="our-team">
                             <div class="our-team__photo">
-                                 <img  src="assets/images/our-team-dr-scott-allison.jpg">
+                                 <img class="lazyload" sizes="160px"  data-src="assets/images/our-team-dr-scott-allison.jpg" alt="Dr. Scott Allison">
                             </div>
                              
                             <h3 class="our-team__name">Dr. Scott Allison</h3>
                             <h4 class="our-team__position">Advisory Board</h4>
                             <p>
-                             Dr. Alison was born and raised in Sullivan, Indiana He studied Biology at Butler and DePauw Universities while playing basketball at both schools. He holds a Doctoral Degree in Optometry from Illinois College of Optometry...
+                             Dr. Allison was born and raised in Sullivan, Indiana He studied Biology at Butler and DePauw Universities while playing basketball at both schools. He holds a Doctoral Degree in Optometry from Illinois College of Optometry...
                             </p>
                             <span class="our-team__learn-more">Learn More</span>
                         </div>
@@ -284,7 +327,7 @@
                      <div class="row__large-4">
                          <div class="our-team">
                             <div class="our-team__photo">
-                                <img  src="assets/images/our-team-zeambo-dahnweih.jpg">
+                                <img class="lazyload" sizes="160px" data-src="assets/images/our-team-zeambo-dahnweih.jpg" alt="Mr. Zeambo Dahnweih">
                              </div>
                              
                            <h3 class="our-team__name">Mr. Zeambo Dahnweih</h3>
@@ -305,7 +348,7 @@
                      <div class="row__large-4">
                         <div class="our-team">
                             <div class="our-team__photo">
-                                 <img  src="assets/images/our-team-toby-eiler.jpg">
+                                 <img class="lazyload" sizes="160px" data-src="assets/images/our-team-toby-eiler.jpg" alt="Mr. Toby Eiler">
                             </div>
                              
                            <h3 class="our-team__name">Mr. Toby Eiler</h3>
@@ -321,13 +364,13 @@
                  <div class="row__large-4">
                          <div class="our-team">
                             <div class="our-team__photo">
-                                <img  src="assets/images/our-team-emmanuel-miantona.jpg">
+                                <img class="lazyload" sizes="160px"  data-src="assets/images/our-team-emmanuel-miantona.jpg" alt="Mr. Emmanuel Miatona">
                              </div>
                              
                            <h3 class="our-team__name">Mr. Emmanuel Miatona</h3>
                             <h4 class="our-team__position">Advisory Board</h4>
                             <p>
-                             “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.”
+                             Mr. Emmanuel Miantona was born in Ganta, Nimba County, Liberia. He grew up in Saclepea, Nimba County. A small town located in the northern part of Liberia. He attended the United Liberia Inland Church Academy (ULICA) for part of his primary education...
                             </p>
                               <span class="our-team__learn-more">Learn More</span>
                         </div>
@@ -338,23 +381,43 @@
         </div>
         <!--end meet our team-->
        
-       
+        <div class="partner">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="partner__content">
+                    <h2>BECOME A PARTNER FOR CHANGE</h2>
+                    <h3>Give Monthly Now</h3>
+                    <div class="generic-content-container">
+                    <p><strong>Help save lives for just $11 a Month</strong></p>
+                <p>To donate, please call us at 763-000-0000 (M-F, 9:00 a.m.-5:00 p.m. CST). 
+
+BKS<sup>&trade;</sup> is a nonprofit 501(c)(3) public charity (tax ID# 00-0000000).</p>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
         
         <!--start contact us-->
          <div id="contact-us" class="page-section" data-matching-link="#contact-us-link">
             <div class="wrapper">
-                <div class="row">
+                <div class="row contact">
                     <h2 class="section-title section-title--blue" >Contact <strong>Us</strong></h2>
-             
+                    <div class="generic-content-container">
+                    <p>Please fill out this form and we will get in touch with you shortly.</p>
+                    </div>
                 <script type="text/javascript" src="http://form.jotform.us/jsform/50254986298166"></script>
                     
                     
-                    <script type="text/javascript" src="https://form.jotform.us/jsform/71891677084166"></script>
+                    <!--<script type="text/javascript" src="https://form.jotform.us/jsform/71891677084166"></script>-->
                 </div>
             </div>
         </div>
        
         <!--end contact us-->
+        
+       
        
       
         <footer class="site-footer">
@@ -365,7 +428,7 @@
                     <a href="#"><span class="fa fa-youtube-square"></span></a>
                 </div>
                 <p>
-                    <span class="site-footer__text">&copy;2017 BKS&trade; Foundation, Inc. </span>
+                    <span class="site-footer__text">&copy;2017 BKS&trade; Foundation, Inc. All Rights Reserved </span>
                     <a href="#" class="btn btn--orange open-modal">Donate Now</a>
                     <!--<img class="site-footer__501c-seal" src="assets/images/501c3_Seal.png" alt="501c seal">-->
                 </p>
