@@ -60,5 +60,15 @@
             font-size:1.5rem;
         }
     }
+    
+    p{
+        margin-bottom:40px;
+        margin-top:0;
+        
+        @mixin atSmall{
+            margin-bottom:auto;
+            margin-top:auto;
+        }
+    }
 }
 
