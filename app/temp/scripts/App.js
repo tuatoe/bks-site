@@ -61,7 +61,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11212,7 +11212,7 @@ class RevealOnScroll{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_waypoints_lib_noframework_waypoints__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_waypoints_lib_noframework_waypoints___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_waypoints_lib_noframework_waypoints__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery_smooth_scroll__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery_smooth_scroll__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery_smooth_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery_smooth_scroll__);
 
 
@@ -11221,6 +11221,7 @@ class RevealOnScroll{
 
 class StickyHeader{
     constructor(){
+        this.lazyImages = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.lazyload');
         this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.site-header');
         this.headerTriggerElement = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.large-hero__title');
         this.createHeaderWaypoint();
@@ -11228,6 +11229,13 @@ class StickyHeader{
         this.headerLinks = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.primary-nav a');
         this.createPageSectionWaypoints();
         this.addSmoothscrolling();
+        this.refreshWaypoints();
+    }
+    
+    refreshWaypoints(){
+        this.lazyImages.load(function(){
+            Waypoint.refreshAll();
+        });
     }
     
     addSmoothscrolling(){
@@ -11284,7 +11292,21 @@ class StickyHeader{
 /* harmony default export */ exports["a"] = StickyHeader;
 
 /***/ },
-/* 6 */
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11648,7 +11670,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ },
-/* 7 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11672,10 +11694,10 @@ var mobileMenu = new __WEBPACK_IMPORTED_MODULE_1__modules_MobileMenu__["a" /* de
 new __WEBPACK_IMPORTED_MODULE_2__modules_RevealOnScroll__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.our-team'), '85%');
 
 //reveal what we do section
-//new RevealOnScroll($('.reveal-what-we-do'), '70%');
+new __WEBPACK_IMPORTED_MODULE_2__modules_RevealOnScroll__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.reveal-what-we-do'), '70%');
 
 //reveal about bks section
-//new RevealOnScroll($('.reveal-about-bks'), '70%');
+new __WEBPACK_IMPORTED_MODULE_2__modules_RevealOnScroll__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.reveal-about-bks'), '70%');
 
 var stickyHeader = new __WEBPACK_IMPORTED_MODULE_3__modules_StickyHeader__["a" /* default */]();
 
