@@ -198,7 +198,7 @@
 }
 
 .carousel-indicators li {
-    display: inline-block;
+    display: none;
     width: 10px;
     height: 10px;
     margin: 1px;
@@ -216,6 +216,10 @@
     height: 12px;
     margin: 0;
     background-color: #fff
+}
+
+@mixin atSmall{
+     display: inline-block;
 }
 
 .carousel-caption {

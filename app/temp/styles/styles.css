@@ -1858,7 +1858,7 @@ a{
 }
 
 .carousel-indicators li {
-    display: inline-block;
+    display: none;
     width: 10px;
     height: 10px;
     margin: 1px;
@@ -1877,6 +1877,10 @@ a{
     margin: 0;
     background-color: #fff
 }
+
+@media(min-width:530px){
+     display: inline-block;
+    }
 
 .carousel-caption {
     position: absolute;
