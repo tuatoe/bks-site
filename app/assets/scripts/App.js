@@ -5,7 +5,6 @@ import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
 
 
-
 var mobileMenu = new MobileMenu();
 
 //reveal our team section
