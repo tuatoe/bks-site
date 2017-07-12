@@ -1846,6 +1846,7 @@ a{
 }
 
 .carousel-indicators {
+    display: none;
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -1857,8 +1858,12 @@ a{
     list-style: none
 }
 
+@media(min-width:530px){
+     display: inline-block;
+    }
+
 .carousel-indicators li {
-    display: none;
+    display: inline-block;
     width: 10px;
     height: 10px;
     margin: 1px;
@@ -1877,10 +1882,6 @@ a{
     margin: 0;
     background-color: #fff
 }
-
-@media(min-width:530px){
-     display: inline-block;
-    }
 
 .carousel-caption {
     position: absolute;
