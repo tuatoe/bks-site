@@ -2,6 +2,7 @@
    background-color:rgba(255,255,255,.8); 
    padding:0 15px 20px 15px;
    margin-bottom:98px;
+    position: relative;
     text-align: center;
     
     @mixin atLarge{
