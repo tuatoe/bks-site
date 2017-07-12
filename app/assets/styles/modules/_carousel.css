@@ -199,7 +199,7 @@
 
 
 .carousel-indicators li {
-    display: inline-block;
+    display: none;
     width: 10px;
     height: 10px;
     margin: 1px;
@@ -210,6 +210,11 @@
     border: 1px solid #fff;
     border-radius: 10px
         
+}
+@mixin atSmall{
+    .carousel-indicators li {
+        display: inline-block;
+    }
 }
 
 .carousel-indicators .active {
