@@ -1858,7 +1858,7 @@ a{
 }
 
 .carousel-indicators li {
-    display: inline-block;
+    display: none;
     width: 10px;
     height: 10px;
     margin: 1px;
@@ -1870,6 +1870,12 @@ a{
     border-radius: 10px
         
 }
+
+@media(min-width:530px){
+    .carousel-indicators li {
+        display: inline-block;
+    }
+    }
 
 .carousel-indicators .active {
     width: 12px;
