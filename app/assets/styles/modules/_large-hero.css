@@ -39,7 +39,7 @@
     }
     
     &__title { 
-        font-weight: 300;
+        font-weight: 700;
         color:$mainBlue;
         font-size:1.5rem;
         margin:0;
