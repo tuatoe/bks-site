@@ -28,6 +28,21 @@
         background-color:$brightOrange;
     }
     
+    &--purple{
+        background-color:$brightPurple
+    }
+    
+     &--purple{
+        background-color:#FFF;
+    }
+    
+    &--yellow{
+        background-color: $mainYellow;
+    }
+    &--brown{
+        background-color: $mainBrown;
+    }
+    
     &--our-team{
        background-color:@lightBlue;
         &.lazyloaded{

@@ -25,4 +25,7 @@
         margin-bottom:1rem;
         margin-top:0;
     }
+    &--dark-orange{
+        color: $darkOrange;
+    }
 }

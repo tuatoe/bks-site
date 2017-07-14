@@ -1,0 +1,21 @@
+.scholarship{
+    background-color:#FFF;
+    padding-bottom:25px;
+    p{
+        color:#555;
+    }
+    
+    &__application{
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.2);
+        transition: all .3s ease-out;
+        
+        &--is-visible{
+           opacity: 1;
+           visibility: visible;
+           transform: scale(1);  
+        }
+    }
+    
+}

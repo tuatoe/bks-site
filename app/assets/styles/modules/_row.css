@@ -15,7 +15,7 @@
 }
 
 &--gutters-small{
-  margin-right:-25px;
+  margin-right:-45px;
 }
 
 &--gutters > div{
@@ -27,33 +27,31 @@
 }
 
 &--gutters-small > div{
-  padding-right:25px;
+  padding-right:45px;
 }
 
 &__b-margin-until-medium{
   margin-bottom:1rem;
 }
     
+   &--bottom-margin{
+    margin-bottom:2rem;
+ } 
+
   @mixin atMedium {
+      
+ &--bottom-margin{
+    margin-bottom:4rem;
+ } 
 
     &__b-margin-until-medium {
         margin-bottom:0;
     }
-       &__medium-3--smaller{
-          float:left;
-          width:21%;
-      }
       
       &__medium-3{
           float:left;
           width:25%;
-      }
-      
-      
-    &__medium-3--larger {
-      width:29%;
-    }
-      
+      }      
     &__medium-4 {
       float:left;
       width:33.33%;
@@ -76,8 +74,6 @@
     &__medium-8--smaller{
       width:63%;
     }
-      
-      
 
   }
 
@@ -87,16 +83,11 @@
         margin-bottom:0;
     }
       
-
       &__large-3{
-          float:left;
-          width:25%;
+          flaot:left;
+          width:33.33%;
       }
       
-      
-    &__large-3--larger {
-      width:29%;
-    }
     &__large-4 {
       float:left;
       width:33.33%;
@@ -118,30 +109,30 @@
 
     &__large-8--smaller{
       width:63%;
-      }
+    }
 
   }
 
-    /*begin equal height rules*/
-    .flexbox &--equal-height-at-medium{
-        @mixin atMedium{
-            display: flex;
-        }
-        
-        & > div {
-            float:none;
-            display: flex;
-        }
+  /*begin equal height rules*/
+  .flexbox &--equal-height-at-medium{
+    @mixin atMedium{
+      display: flex;
+
     }
-    
-     .flexbox &--equal-height-at-large{
-        @mixin atMedium{
-            display: flex;
-        }
-        
-        & > div {
-            float:none;
-            display: flex;
-        }
+    & > div{
+      float:none;
+      display: flex;
     }
+  }
+
+  .flexbox &--equal-height-at-large{
+    @mixin atLarge{
+      display: flex;
+
+    }
+    & > div{
+      float:none;
+      display: flex;
+    }
+  }
 }

@@ -1,0 +1,10 @@
+.gallery{
+    &__content{
+        padding:10px;
+        background-color:$lightBlue;
+        
+        &--title{
+            color:$darkOrange;
+        }
+    }
+}

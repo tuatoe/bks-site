@@ -4,8 +4,22 @@
     text-decoration: none;
     padding:.55rem 1rem;
     display: inline-block;
+    cursor: pointer;
+   
     &--orange{
         background-color:$mainOrange;
+    }
+    
+    &--green{
+        background-color:$mainGreen;
+    }
+    
+     &--grown{
+        background-color:$mainBrown;
+    }
+    
+     &--purple{
+        background-color:$brightPurple;
     }
     
     &--donate{

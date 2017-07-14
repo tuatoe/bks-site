@@ -15,4 +15,21 @@ img{
 
 a{
     color:$mainOrange;
+    text-decoration: none;
+}
+
+button{
+    border:0;
+    
+    &:active{
+        outline:none;
+    }
+}
+
+.warning{
+    color:$darkOrange !important;
+}
+
+.small{
+    font-size:.85rem;
 }

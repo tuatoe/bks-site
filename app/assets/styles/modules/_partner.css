@@ -1,32 +1,40 @@
 .partner{
-    padding:15px;
-    text-align: center;
-    background-color:$brightPurple;
-    
-    &__content{
-        max-width:530px;
-        margin:0 auto;
-    }
-    
-    h2{
-        text-transform: uppercase;
-        color:#FFF;
-        font-size:2rem;
-        font-weight: 500;
-        margin-top:.5em;
-        margin-bottom:.3em;
-    }
+   
     h3{
+        text-transform: uppercase;
+        color:$darkOrange;
+        font-size:1.5rem;
+        font-weight: 500;
+        margin-top:0;
+        margin-bottom:.3em;
+        font-weight: bold;
+    }
+    
+    h4{
          text-transform: uppercase;
-        color:#FFF;
+         color:$darkOrange;
         font-weight: 300;
         font-size:1.5rem;
         margin-top:0;
-        margin-bottom:.3em;
+        margin-bottom:0;
+        font-weight: bold;
     }
+    
     p{
-        margin:0;
-        padding:0;
-        color:#FFF;
+        color:#555;
+    }
+    
+    button{
+        border:0;
+        cursor: pointer;
+        margin-top:0;
+        margin-bottom:10px;
+        
+    }
+    &__help-text{
+        p{
+            margin:.5em 0;
+            line-height: 1;
+        } 
     }
 }
