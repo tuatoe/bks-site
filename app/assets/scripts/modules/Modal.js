@@ -10,13 +10,13 @@ import $ from 'jquery';
 
     events(){
       //clicking the open modal button
-      this.openModalButton.click(function(e){
+      this.openModalButton.on('click',function(e){
           e.preventDefault();
          this.openModal.bind(this);
       });
 
       //clicking the x close modal button
-      this.closeModalButton.click(this.closeModal.bind(this));
+      this.closeModalButton.on('click',this.closeModal.bind(this));
 
       //pushes any key
       $(document).keyup(this.keyPressHandler.bind(this));

@@ -9,7 +9,7 @@ class MobileMenu{
     }
 
     events(){
-      this.menuIcon.click(this.toggleTheMenu.bind(this));
+      this.menuIcon.on('click',this.toggleTheMenu.bind(this));
     }
 
     toggleTheMenu(){

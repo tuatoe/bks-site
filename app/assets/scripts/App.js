@@ -3,6 +3,7 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
+import ScholarshipApp from './modules/ScholarshipApp';
 
 var mobileMenu = new MobileMenu();
 
@@ -22,6 +23,8 @@ new RevealOnScroll($('.reveal-about-bks'), '70%');
 new RevealOnScroll($('.reveal-gallery'), '70%'); 
 
 var stickyHeader = new StickyHeader();
+
+var scholarshipApp = new ScholarshipApp();
 
 var modal = new Modal();
 
