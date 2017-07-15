@@ -10735,10 +10735,7 @@ var Modal = function () {
     key: 'events',
     value: function events() {
       //clicking the open modal button
-      this.openModalButton.on('click', function (e) {
-        e.preventDefault();
-        this.openModal.bind(this);
-      });
+      this.openModalButton.on('click', this.openModal.bind(this));
 
       //clicking the x close modal button
       this.closeModalButton.on('click', this.closeModal.bind(this));
@@ -10859,8 +10856,8 @@ var ScholarshipApp = function () {
         _classCallCheck(this, ScholarshipApp);
 
         this.applyNow = (0, _jquery2.default)('.apply-now');
-        this.scholarshipApp = (0, _jquery2.default)('.scholarship__application');
-        this.closeApp = (0, _jquery2.default)('.close-app');
+        this.scholarshipApp = (0, _jquery2.default)('.bks');
+        this.closeApp = (0, _jquery2.default)('.bks__close');
         this.events();
     }
 
@@ -10868,17 +10865,21 @@ var ScholarshipApp = function () {
         key: 'events',
         value: function events() {
             this.applyNow.on('click', this.showApp.bind(this));
-            //this.closeApp.on('click',this.applyNow.show(),this.hideApplication.bind(this));
+
+            this.closeApp.on('click', this.hideApplication.bind(this));
+
+            //$(document).keyup(this.keyPressHandler.bind(this));
         }
     }, {
         key: 'showApp',
         value: function showApp() {
-            this.scholarshipApp.toggleClass('scholarship__is-visible');
+            this.scholarshipApp.addClass('bks--is-visible');
+            return false;
         }
     }, {
         key: 'hideApplication',
         value: function hideApplication() {
-            this.scholarshipApp.removeClass('scholarship__is-visible');
+            this.scholarshipApp.removeClass('bks--is-visible');
         }
     }]);
 

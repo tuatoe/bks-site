@@ -2,23 +2,27 @@ import $ from 'jquery';
  class ScholarshipApp{
     constructor(){
         this.applyNow = $('.apply-now');
-        this.scholarshipApp = $('.scholarship__application');
-        this.closeApp = $('.close-app');
+        this.scholarshipApp = $('.bks');
+        this.closeApp = $('.bks__close');
         this.events();
     }
 
     events(){
         this.applyNow.on('click',this.showApp.bind(this));
-        //this.closeApp.on('click',this.applyNow.show(),this.hideApplication.bind(this));
+        
+        this.closeApp.on('click',this.hideApplication.bind(this));
+        
+        //$(document).keyup(this.keyPressHandler.bind(this));
         
     }
 
     showApp(){
-        this.scholarshipApp.toggleClass('scholarship__is-visible');
+        this.scholarshipApp.addClass('bks--is-visible');
+        return false;
     }
      
     hideApplication(){
-        this.scholarshipApp.removeClass('scholarship__is-visible');
+        this.scholarshipApp.removeClass('bks--is-visible');
     } 
  }
 

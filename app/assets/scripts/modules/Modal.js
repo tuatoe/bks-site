@@ -10,10 +10,7 @@ import $ from 'jquery';
 
     events(){
       //clicking the open modal button
-      this.openModalButton.on('click',function(e){
-          e.preventDefault();
-         this.openModal.bind(this);
-      });
+      this.openModalButton.on('click',this.openModal.bind(this));
 
       //clicking the x close modal button
       this.closeModalButton.on('click',this.closeModal.bind(this));
