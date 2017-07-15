@@ -1980,9 +1980,16 @@ button:active{
         background-color:#e0e6ef;
     }
 
-.gallery__content--title{
-            color:#f2663a;
+.gallery__content__title{
+            color:#666;
+            margin-top:.3rem;
         }
+
+.gallery__content__image:hover{
+                opacity: .8;
+                -webkit-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+            }
 
 
 
