@@ -10868,7 +10868,7 @@ var ScholarshipApp = function () {
 
             this.closeApp.on('click', this.hideApplication.bind(this));
 
-            //$(document).keyup(this.keyPressHandler.bind(this));
+            (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
         }
     }, {
         key: 'showApp',
@@ -10976,7 +10976,6 @@ var StickyHeader = function () {
           },
           offset: "18%"
         });
-
         new Waypoint({
           element: currentPageSection,
           handler: function handler(direction) {

@@ -38,6 +38,7 @@ class StickyHeader {
   addSmoothScrolling(){
     this.headerLinks.smoothScroll();
   }
+    
 
   createPageSectionWaypoints(){
     var that = this;
@@ -54,8 +55,6 @@ class StickyHeader {
             },
             offset: "18%"
         });
-
-
         new Waypoint({
             element:currentPageSection,
             handler:function(direction){
@@ -70,5 +69,4 @@ class StickyHeader {
     });
   }
 }
-
 export default StickyHeader;

@@ -12,7 +12,7 @@ import $ from 'jquery';
         
         this.closeApp.on('click',this.hideApplication.bind(this));
         
-        //$(document).keyup(this.keyPressHandler.bind(this));
+        $(document).keyup(this.keyPressHandler.bind(this));
         
     }
 
