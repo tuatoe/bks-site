@@ -3,8 +3,16 @@
         padding:10px;
         background-color:$lightBlue;
         
-        &--title{
-            color:$darkOrange;
+        &__title{
+            color:#666;
+            margin-top:.3rem;
+        }
+        
+        &__image{
+            &:hover{
+                opacity: .8;
+                transition: all .3s ease-out;
+            }
         }
     }
 }
