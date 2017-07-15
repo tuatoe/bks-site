@@ -4,18 +4,20 @@
     p{
         color:#555;
     }
-    
+     
     &__application{
         opacity: 0;
-        visibility: hidden;
+        display: none;
         transform: scale(1.2);
         transition: all .3s ease-out;
-        
-        &--is-visible{
-           opacity: 1;
-           visibility: visible;
-           transform: scale(1);  
         }
+       
+    &__is-visible{
+        margin-top:15px;    
+       opacity: 1;
+       display: block;
+       transform: scale(1);  
     }
+  
     
 }
