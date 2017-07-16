@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.5.0
- * Build https://modernizr.com/download?-arrow-flexbox-hidden-svg-setclasses-dontmin
+ * Build https://modernizr.com/download?-flexbox-setclasses-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -231,100 +231,6 @@
   }
 
   ;
-/*!
-{
-  "name": "SVG",
-  "property": "svg",
-  "caniuse": "svg",
-  "tags": ["svg"],
-  "authors": ["Erik Dahlstrom"],
-  "polyfills": [
-    "svgweb",
-    "raphael",
-    "amplesdk",
-    "canvg",
-    "svg-boilerplate",
-    "sie",
-    "dojogfx",
-    "fabricjs"
-  ]
-}
-!*/
-/* DOC
-Detects support for SVG in `<embed>` or `<object>` elements.
-*/
-
-  Modernizr.addTest('svg', !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect);
-
-
-  /**
-   * createElement is a convenience wrapper around document.createElement. Since we
-   * use createElement all over the place, this allows for (slightly) smaller code
-   * as well as abstracting away issues with creating elements in contexts other than
-   * HTML documents (e.g. SVG documents).
-   *
-   * @access private
-   * @function createElement
-   * @returns {HTMLElement|SVGElement} An HTML or SVG element
-   */
-
-  function createElement() {
-    if (typeof document.createElement !== 'function') {
-      // This is the case in IE7, where the type of createElement is "object".
-      // For this reason, we cannot call apply() as Object is not a Function.
-      return document.createElement(arguments[0]);
-    } else if (isSVG) {
-      return document.createElementNS.call(document, 'http://www.w3.org/2000/svg', arguments[0]);
-    } else {
-      return document.createElement.apply(document, arguments);
-    }
-  }
-
-  ;
-/*!
-{
-  "name": "[hidden] Attribute",
-  "property": "hidden",
-  "tags": ["dom"],
-  "notes": [{
-    "name": "WHATWG: The hidden attribute",
-    "href": "https://developers.whatwg.org/editing.html#the-hidden-attribute"
-  }, {
-    "name": "original implementation of detect code",
-    "href": "https://github.com/aFarkas/html5shiv/blob/bf4fcc4/src/html5shiv.js#L38"
-  }],
-  "polyfills": ["html5shiv"],
-  "authors": ["Ron Waldon (@jokeyrhyme)"]
-}
-!*/
-/* DOC
-Does the browser support the HTML5 [hidden] attribute?
-*/
-
-  Modernizr.addTest('hidden', 'hidden' in createElement('a'));
-
-/*!
-{
-  "name": "ES6 Arrow Functions",
-  "property": "arrow",
-  "authors": ["Vincent Riemer"],
-  "tags": ["es6"]
-}
-!*/
-/* DOC
-Check if browser implements ECMAScript 6 Arrow Functions per specification.
-*/
-
-  Modernizr.addTest('arrow', function() {
-    try {
-      // eslint-disable-next-line
-      eval('()=>{}');
-    } catch (e) {
-      return false;
-    }
-    return true;
-  });
-
 
   /**
    * If the browsers follow the spec, then they would expose vendor-specific styles as:
@@ -362,6 +268,31 @@ Check if browser implements ECMAScript 6 Arrow Functions per specification.
 
   function contains(str, substr) {
     return !!~('' + str).indexOf(substr);
+  }
+
+  ;
+
+  /**
+   * createElement is a convenience wrapper around document.createElement. Since we
+   * use createElement all over the place, this allows for (slightly) smaller code
+   * as well as abstracting away issues with creating elements in contexts other than
+   * HTML documents (e.g. SVG documents).
+   *
+   * @access private
+   * @function createElement
+   * @returns {HTMLElement|SVGElement} An HTML or SVG element
+   */
+
+  function createElement() {
+    if (typeof document.createElement !== 'function') {
+      // This is the case in IE7, where the type of createElement is "object".
+      // For this reason, we cannot call apply() as Object is not a Function.
+      return document.createElement(arguments[0]);
+    } else if (isSVG) {
+      return document.createElementNS.call(document, 'http://www.w3.org/2000/svg', arguments[0]);
+    } else {
+      return document.createElement.apply(document, arguments);
+    }
   }
 
   ;

@@ -516,12 +516,19 @@ button:active{
 .large-hero__title{
     font-weight:300;
     color:#2f5572;
-    font-size:1.5rem;
+    font-size:1.8rem;
     margin:0;
       font-weight: bold;
   }
 
 @media(min-width:530px){
+
+.large-hero__title{
+      font-size:2.8rem
+  }
+    }
+
+@media(min-width:800px){
 
 .large-hero__title{
       font-size:4.8rem
@@ -1470,7 +1477,6 @@ button:active{
              
     
         /*top:50%;*/
-        /*transform: translateY(-50%);*/
         
     }
 
@@ -1481,6 +1487,18 @@ button:active{
         
     }
     }
+
+/*transform: translateY(-50%);*/
+
+.sehkar-modal__inner--img{
+            border-radius: 80px;
+            overflow: hidden;
+            width:160px;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+            border:6px solid rgba(255,255,255,.8);
+        }
 
 .sehkar-modal--is-visible{
         opacity: 1;
@@ -1539,7 +1557,6 @@ button:active{
              
     
         /*top:50%;*/
-        /*transform: translateY(-50%);*/
         
     }
 
@@ -1550,6 +1567,18 @@ button:active{
         
     }
     }
+
+/*transform: translateY(-50%);*/
+
+.allison-modal__inner--img{
+            border-radius: 80px;
+            overflow: hidden;
+            width:160px;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+            border:6px solid rgba(255,255,255,.8);
+        }
 
 .allison-modal--is-visible{
         opacity: 1;
@@ -1608,7 +1637,6 @@ button:active{
              
     
         /*top:50%;*/
-        /*transform: translateY(-50%);*/
         
     }
 
@@ -1619,6 +1647,18 @@ button:active{
         
     }
     }
+
+/*transform: translateY(-50%);*/
+
+.dahnweih-modal__inner--img{
+            border-radius: 80px;
+            overflow: hidden;
+            width:160px;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+            border:6px solid rgba(255,255,255,.8);
+        }
 
 .dahnweih-modal--is-visible{
         opacity: 1;
@@ -1677,7 +1717,6 @@ button:active{
              
     
         /*top:50%;*/
-        /*transform: translateY(-50%);*/
         
     }
 
@@ -1688,6 +1727,18 @@ button:active{
         
     }
     }
+
+/*transform: translateY(-50%);*/
+
+.eiler-modal__inner--img{
+            border-radius: 80px;
+            overflow: hidden;
+            width:160px;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+            border:6px solid rgba(255,255,255,.8);
+        }
 
 .eiler-modal--is-visible{
         opacity: 1;
@@ -1710,6 +1761,7 @@ button:active{
             transform: scale(1.2);
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
+    
 }
 
 .miantona-modal__description{
@@ -1746,7 +1798,6 @@ button:active{
              
     
         /*top:50%;*/
-        /*transform: translateY(-50%);*/
         
     }
 
@@ -1757,6 +1808,18 @@ button:active{
         
     }
     }
+
+/*transform: translateY(-50%);*/
+
+.miantona-modal__inner--img{
+            border-radius: 80px;
+            overflow: hidden;
+            width:160px;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+            border:6px solid rgba(255,255,255,.8);
+        }
 
 .miantona-modal--is-visible{
         opacity: 1;

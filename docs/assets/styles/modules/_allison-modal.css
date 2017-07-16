@@ -48,6 +48,16 @@
         /*top:50%;*/
         /*transform: translateY(-50%);*/
         
+        &--img{
+            border-radius: 80px;
+            overflow: hidden;
+            width:160px;
+            height: 160px;
+            margin: 0 auto;
+            position: relative;
+            border:6px solid rgba(255,255,255,.8);
+        }
+        
     }
     
     &--is-visible{
