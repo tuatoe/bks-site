@@ -16,7 +16,11 @@
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_reveal-item";
-@import "modules/_modal";
+@import "modules/_sehkar-modal";
+@import "modules/_allison-modal";
+@import "modules/_dahnweih-modal";
+@import "modules/_eiler-modal";
+@import "modules/_miantona-modal";
 @import "modules/_social-icons";
 @import "modules/_about-bks";
 @import "modules/_quick-access";
@@ -26,6 +30,7 @@
 @import "modules/_carousel";
 @import "modules/_bks";
 @import "modules/_gallery";
+@import "modules/_bs-modal";
 
 
 
