@@ -2,7 +2,11 @@ import $ from 'jquery';
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
-import Modal from './modules/Modal';
+import SehkarModal from './modules/SehkarModal';
+import EilerModal from './modules/EilerModal';
+import DahnweihModal from './modules/DahnweihModal';
+import AllisonModal from './modules/AllisonModal';
+import MiantonaModal from './modules/MiantonaModal';
 import ScholarshipApp from './modules/ScholarshipApp';
 
 var mobileMenu = new MobileMenu();
@@ -26,6 +30,10 @@ var stickyHeader = new StickyHeader();
 
 var scholarshipApp = new ScholarshipApp();
 
-var modal = new Modal();
+var sehkarModal = new SehkarModal();
+var eilerModal = new EilerModal();
+var dahnweihModal = new DahnweihModal();
+var allisonModal = new AllisonModal();
+var miantonaModal = new MiantonaModal();
 
 

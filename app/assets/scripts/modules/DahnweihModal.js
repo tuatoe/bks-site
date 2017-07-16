@@ -1,10 +1,11 @@
+
 import $ from 'jquery';
 
- class Modal{
+ class DahnweihModal{
     constructor(){
-      this.openModalButton = $('.open-modal');
-      this.modal = $('.modal');
-      this.closeModalButton = $('.modal__close');
+      this.openModalButton = $('.open-dahnweih-modal');
+      this.modal = $('.dahnweih-modal');
+      this.closeModalButton = $('.dahnweih-modal__close');
       this.events();
     }
 
@@ -26,14 +27,15 @@ import $ from 'jquery';
     }
 
     openModal(){
-        this.modal.addClass('modal--is-visible');
+        this.modal.addClass('dahnweih-modal--is-visible');
         return false;
     }
 
     closeModal(){
-        this.modal.removeClass('modal--is-visible');
+        this.modal.removeClass('dahnweih-modal--is-visible');
     }
 
 
  }
-export default Modal;
+export default DahnweihModal;
+

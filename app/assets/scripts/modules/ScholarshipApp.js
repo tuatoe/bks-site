@@ -15,6 +15,12 @@ import $ from 'jquery';
         $(document).keyup(this.keyPressHandler.bind(this));
         
     }
+     
+      keyPressHandler(e){
+      if(e.keyCode == 27){
+        this.closeModal();
+      }
+    }
 
     showApp(){
         this.scholarshipApp.addClass('bks--is-visible');
