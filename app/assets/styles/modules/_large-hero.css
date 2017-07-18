@@ -3,7 +3,7 @@
   position: relative;
     
     @mixin atMedium{
-        height:400px;
+        height:550px;
         overflow: hidden;
     }    
 

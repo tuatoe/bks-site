@@ -11341,6 +11341,9 @@ new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-about-bks'), '70%');
 //reveal gallery
 new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-gallery'), '70%');
 
+//reveal gallery
+new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-scholarship'), '70%');
+
 var stickyHeader = new _StickyHeader2.default();
 
 var scholarshipApp = new _ScholarshipApp2.default();

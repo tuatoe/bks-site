@@ -27,6 +27,9 @@ new RevealOnScroll($('.reveal-about-bks'), '70%');
 //reveal gallery
 new RevealOnScroll($('.reveal-gallery'), '70%'); 
 
+//reveal gallery
+new RevealOnScroll($('.reveal-scholarship'), '70%'); 
+
 var stickyHeader = new StickyHeader();
 
 var scholarshipApp = new ScholarshipApp();
