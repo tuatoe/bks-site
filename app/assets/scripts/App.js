@@ -9,6 +9,7 @@ import AllisonModal from './modules/AllisonModal';
 import MiantonaModal from './modules/MiantonaModal';
 import ScholarshipApp from './modules/ScholarshipApp';
 
+
 var mobileMenu = new MobileMenu();
 
 //reveal our team section
@@ -35,5 +36,6 @@ var eilerModal = new EilerModal();
 var dahnweihModal = new DahnweihModal();
 var allisonModal = new AllisonModal();
 var miantonaModal = new MiantonaModal();
+
 
 

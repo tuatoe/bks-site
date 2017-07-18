@@ -36,12 +36,13 @@
    &__inner{
         /*position: absolute;*/
         width:100%;
-        height:43.75rem;
+        height:53.75rem;
         overflow:auto;
         margin:2.8125rem auto;
         
         @mixin atMedium{
              width:60%;
+             height:43.75rem;
         }
              
     

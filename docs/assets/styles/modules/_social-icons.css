@@ -1,44 +1,38 @@
-.social-icons {
-    margin:0 auto;
-    text-align: center;
-    a {
-        display: inline-block;
-        font-size: 2rem;
-        margin-right: .2rem;
-        width: 36%;
-        height: 60px;
-        border: 2px solid #fff;
-        padding: 10px 15px;
-        margin-bottom: .6rem;
-        
-        &:hover {
-            color:$mainBlue;
-        }
-        
-         @mixin atSmall{
-            width: 36%;
-             padding:10px 15px;
-        }
-        
-          @mixin atMedium{
-            width:32%;
-            padding:5px 15px;
+ul.social-icons {
+        list-style: none;
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+    
+        li{
+            float:left;
+            margin-right:15px;
+            text-align: center;
+            padding: 10px;
+             border:1px solid $mainBlue;
+            float: left;
+            width: 52px;
+            height: 48px;
+            margin-right: 25px;
+            cursor: pointer;
+            border-radius: 5px;
             font-size:1.5rem;
-              height:40px;
-        }
-        
-        @mixin atLarge{
-            padding:5px;
-            height:40px;
-            width: 26%;
+            a{
+                color:$mainBlue;
+            }
+            
+            &:hover{
+              border:1px solid $darkOrange;
+                a{
+                    color:$darkOrange;
+                }
+            }
+            
+            &:last-child:{
+                margin-right: 0;
+            }
         }
     
-       
-    }   
-    
-    &--white{
-        a{
-            color: #FFF;
-        }
-    }
+
 }

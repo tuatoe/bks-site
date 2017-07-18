@@ -1,5 +1,5 @@
 import '../../temp/scripts/modernizr';
-import 'bootstrap';
 import 'picturefill';
 import 'lazysizes';
+import '../../temp/scripts/lightbox';
 
