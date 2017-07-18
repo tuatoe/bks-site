@@ -39,6 +39,7 @@
         height:63.75rem;
         overflow:auto;
         margin:2.8125rem auto;
+        padding-bottom:3rem;
         
         @mixin atMedium{
              width:60%;
