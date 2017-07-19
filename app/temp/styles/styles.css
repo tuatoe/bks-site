@@ -912,12 +912,12 @@ button:active{
       width:37%;
     }
 
-    .row__large--6{
+    .row__large-6{
       float:left;
       width:50%;
     }
 
-    .row__large--8{
+    .row__large-8{
       float:left;
       width:66.66%;
     }
@@ -2567,6 +2567,20 @@ body.lb-disable-scrolling{overflow:hidden}
 .lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(../images/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;transition:opacity .2s}
 
 .lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
+
+.events ul{
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+
+.events ul li{
+            margin-bottom:15px;
+        }
+
+.events ul li a:hover{
+                color:#2f5572;
+                }
 
 
 
