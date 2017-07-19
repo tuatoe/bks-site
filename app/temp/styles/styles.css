@@ -2581,12 +2581,55 @@ body.lb-disable-scrolling{overflow:hidden}
     }
 
 .events ul li{
-            margin-bottom:15px;
+            margin-bottom:1em;
         }
 
 .events ul li a:hover{
                 color:#2f5572;
                 }
+
+.events img{
+        margin-bottom: 5px;
+         border-radius: 5px;
+    }
+
+.events__upcoming-events{
+        position: relative;
+    }
+
+.events__upcoming-events__big-date{
+            background-color: #f2663a;
+            color: #FFF;
+            position: absolute;
+            padding: .625rem;
+            top: .5rem;
+            right: 3.5rem;
+            font-size: 1.1rem;
+            width: 3.3125rem;
+            text-align: center;
+            }
+
+.events__upcoming-events__small-date{
+            color: #ccc;
+            font-size: .75rem;
+            margin-top: .2em;
+            margin-bottom: .1em;
+        }
+
+.events__upcoming-events__location{
+            color: #ccc;
+            font-size: .75rem;
+            margin-top: .4em;
+            margin-bottom: .2em;
+        }
+
+.events__upcoming-events__title{
+            text-transform: uppercase;
+            color:#f2663a;
+            font-size:1rem;
+            margin-top:.4rem;
+            font-weight: 300;
+        }
 
 
 
