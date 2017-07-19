@@ -30,6 +30,12 @@ new RevealOnScroll($('.reveal-gallery'), '70%');
 //reveal gallery
 new RevealOnScroll($('.reveal-scholarship'), '70%'); 
 
+//reveal resource center
+new RevealOnScroll($('.reveal-resource-center'), '70%');
+
+//reveal events
+new RevealOnScroll($('.reveal-events'), '70%');
+
 var stickyHeader = new StickyHeader();
 
 var scholarshipApp = new ScholarshipApp();
