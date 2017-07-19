@@ -1484,7 +1484,7 @@ button:active{
 .sehkar-modal__inner{
         /*position: absolute;*/
         width:100%;
-        height:63.75rem;
+        height:100rem;
         overflow:auto;
         margin:2.8125rem auto;
         padding-bottom:3rem;
@@ -1498,7 +1498,8 @@ button:active{
 
 .sehkar-modal__inner{
              width:60%;
-             height:53.75rem
+             height:53.75rem;
+            overflow: auto
         
     }
     }
@@ -1566,7 +1567,7 @@ button:active{
 .allison-modal__inner{
         /*position: absolute;*/
         width:100%;
-        height:43.75rem;
+        height:100rem;
         overflow:auto;
         margin:2.8125rem auto;
         padding-bottom:3rem;
@@ -1579,7 +1580,9 @@ button:active{
 @media(min-width:800px){
 
 .allison-modal__inner{
-             width:60%
+             width:60%;
+            height: 53rem;
+            overflow: auto
         
     }
     }
@@ -1647,7 +1650,7 @@ button:active{
 .dahnweih-modal__inner{
         /*position: absolute;*/
         width:100%;
-        height:53.75rem;
+        height:100rem;
         overflow:auto;
         margin:2.8125rem auto;
         padding-bottom:3rem;
@@ -1661,7 +1664,8 @@ button:active{
 
 .dahnweih-modal__inner{
              width:60%;
-             height:43.75rem
+             height:53.75rem;
+            overflow: auto
         
     }
     }
@@ -1729,7 +1733,7 @@ button:active{
 .eiler-modal__inner{
         /*position: absolute;*/
         width:100%;
-        height:43.75rem;
+        height:100rem;
         overflow:auto;
         margin:2.8125rem auto;
         padding-bottom:3rem;
@@ -1742,7 +1746,8 @@ button:active{
 @media(min-width:800px){
 
 .eiler-modal__inner{
-             width:60%
+             width:60%;
+            height:53.75rem
         
     }
     }
@@ -1811,7 +1816,7 @@ button:active{
 .miantona-modal__inner{
         /*position: absolute;*/
         width:100%;
-        height:53.75rem;
+        height:100rem;
         overflow:auto;
         margin:2.8125rem auto;
         padding-bottom:3rem;
@@ -1825,7 +1830,8 @@ button:active{
 
 .miantona-modal__inner{
              width:60%;
-             height:43.75rem
+             height:53.75rem;
+            overflow: auto
         
     }
     }
