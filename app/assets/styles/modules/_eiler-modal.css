@@ -44,7 +44,7 @@
         @mixin atMedium{
              width:60%;
              height:800px;
-            overflow: auto;
+            overflow-y:scroll;
         }
              
     
