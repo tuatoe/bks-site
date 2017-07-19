@@ -1,25 +1,17 @@
 .events{
-    ul{
-        margin:0;
-        padding:0;
-        list-style: none;
-        
-        li{
-            margin-bottom:1em;
-            a{
-                &:hover{
-                color:$mainBlue;
-                }
-            }
-        }
+    
+    &__section-title{
+        font-weight: 300;
+        font-size:1.3rem;
     }
     
-     img{
+    
+     img {
         margin-bottom: 5px;
-         border-radius: 5px;
+        border-radius: 5px;
     }
     
-    &__upcoming-events{
+    &__event-content{
         position: relative;
         
         &__big-date{
