@@ -9,7 +9,7 @@
          background-color:rgba(47,85,114, .5);
     }
     
-    @mixin atMedium{
+    @mixin atLarge{
         position: fixed;
         background-color:rgba(47,85,114, .6);
         
@@ -21,7 +21,7 @@
     &__btn-container{
       
         margin-top: 10px;
-        @mixin atMedium{
+        @mixin atLarge{
              float:right;
             margin-top:0;
         }
@@ -46,7 +46,7 @@
             font-size:1rem;
         }
         
-        @mixin atMedium{
+        @mixin atLarge{
             left:auto;
             transform: translateX(0);
             .site-header--dark &{
@@ -102,7 +102,7 @@
       transition: transform .3s ease-out;
     }
 
-    @mixin atMedium{
+    @mixin atLarge{
       display: none;
     }
 
@@ -132,7 +132,7 @@
         padding-top:100px;
         text-align: center;
         
-        @mixin atMedium{
+        @mixin atLarge{
             opacity: 1;
             z-index: 1;
             padding-top:0;
