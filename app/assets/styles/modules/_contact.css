@@ -3,3 +3,14 @@
         text-align: center;
     }
 }
+
+.jot-form{
+    height:700px;
+    @mixin atSmall{
+        height: 700px;
+    }
+    @mixin atMedium{
+        height:650px;
+    }
+    
+}

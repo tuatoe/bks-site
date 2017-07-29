@@ -37,7 +37,10 @@
    &--bottom-margin{
     margin-bottom:2rem;
  } 
-    
+
+    &--p-bottom{
+        padding-bottom:3rem;
+    }
 
 
   @mixin atMedium {
