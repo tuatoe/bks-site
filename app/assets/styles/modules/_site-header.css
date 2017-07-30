@@ -2,11 +2,11 @@
     padding:10px 0;
     position: absolute;
     width:100%;
-    z-index: 2;
+    z-index: 5;
     transition: background-color .3s ease-out;
     
     &--is-expanded{
-         background-color:rgba(47,85,114, .5);
+         background-color:rgba(47,85,114, .9);
     }
     
     @mixin atLarge{
@@ -128,7 +128,7 @@
         transform: scale(1.2);
         transition: all .3s ease-out;
         position: relative;
-        z-index: -10;
+        z-index: -1;
         padding-top:100px;
         text-align: center;
         

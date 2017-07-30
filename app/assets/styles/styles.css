@@ -24,13 +24,12 @@
 @import "modules/_social-icons";
 @import "modules/_about-bks";
 @import "modules/_contact";
-@import "modules/_carousel";
 @import "modules/_bks";
 @import "modules/_gallery";
-@import "modules/_bs-modal";
 @import "modules/_lightbox";
 @import "modules/_events";
 @import "modules/_how-you-can-help";
+@import "modules/_modal";
 
 
 

@@ -10997,7 +10997,7 @@ var Modal = function () {
   function Modal() {
     _classCallCheck(this, Modal);
 
-    this.openModalButton = (0, _jquery2.default)('.open-modal');
+    this.openModalButton = (0, _jquery2.default)('.open-video');
     this.modal = (0, _jquery2.default)('.modal');
     this.closeModalButton = (0, _jquery2.default)('.modal__close');
     this.iframe = (0, _jquery2.default)('#player')[0];
@@ -11011,14 +11011,13 @@ var Modal = function () {
       //clicking the open modal button
       this.openModalButton.click(this.openModal.bind(this));
       this.openModalButton.on('click', function () {
-        var iframe = (0, _jquery2.default)('#bks=foundation-founder')[0];
+        var iframe = (0, _jquery2.default)('#bks-foundation-founder')[0];
         var player = $f(iframe);
         player.api('play');
       });
       //clicking the x close modal button
       this.closeModalButton.click(this.closeModal.bind(this));
       this.closeModalButton.on('click', function () {
-        //$('.modal .modal__inner iframe').attr('src', $('.modal .modal__inner iframe').attr('src')); 
         var iframe = (0, _jquery2.default)('#bks-foundation-founder')[0];
         var player = $f(iframe);
         player.api('pause');
@@ -11283,7 +11282,7 @@ var StickyHeader = function () {
 
     this.lazyImages = (0, _jquery2.default)('.lazyload');
     this.siteHeader = (0, _jquery2.default)('.site-header');
-    this.headerTriggerElement = (0, _jquery2.default)('.large-hero__title');
+    this.headerTriggerElement = (0, _jquery2.default)('.large-hero__container__text-content__title');
     this.createHeaderWaypoint();
     this.pageSections = (0, _jquery2.default)('.page-section');
     this.headerLinks = (0, _jquery2.default)('.primary-nav a');

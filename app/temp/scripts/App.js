@@ -10997,7 +10997,7 @@ var Modal = function () {
   function Modal() {
     _classCallCheck(this, Modal);
 
-    this.openModalButton = (0, _jquery2.default)('.open-modal');
+    this.openModalButton = (0, _jquery2.default)('.open-video');
     this.modal = (0, _jquery2.default)('.modal');
     this.closeModalButton = (0, _jquery2.default)('.modal__close');
     this.iframe = (0, _jquery2.default)('#player')[0];

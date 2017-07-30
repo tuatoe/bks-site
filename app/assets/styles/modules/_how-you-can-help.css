@@ -2,7 +2,9 @@
     &__tab-content{
         display: none;
         animation: fadeEffect 2s;
-        min-height:400px;
+        min-height:31.25rem;
+        margin-top:2em;
+        
         
         
         &.how-you-can-help__nav-tabs--current-tab{
@@ -10,26 +12,32 @@
             display: block;
         }
         p{
-            color:#FFF;
+            color:#555;
             line-height: 1.625;
             font-weight: normal;
-            font-size:.875rem;
             letter-spacing:  0.05em;
             margin: 0 0 1.25em;
-            text-align: center;
+            font-weight: 300;
         }
         
-       
-        
-        &__recruitment{
+        h3{
+            color:$darkOrange;
+            font-size:1.5rem;
+            margin-top:0;
+            margin-bottom:.3rem;
+        }
+        h4{
+            margin-top:0;
+            margin-bottom:.3rem;
+            font-size:1.1rem;
             color:#FFF;
-            text-align: left;
-            p{
-                text-align: left;
-            }
-             
         }
         
+        & .btn--green{
+            margin-bottom:1rem;
+        }
+       
+     
         &__donate{
             color:#FFF;
             text-align: left;
@@ -104,6 +112,7 @@
             }
            
         }
+        
     }
     
    
@@ -114,14 +123,15 @@
         width:100%;
         margin:0;
         padding:0;
+         margin:0 auto;
         
         @mixin atSmall{
-              width:500px;
-                margin:0 auto;
+              width:360px;
+               
         }
         
         @mixin atMedium{
-             width:630px;
+             width:435px;
         }
         &__link{
             display: block;
@@ -129,15 +139,16 @@
             font-family: 'Oswald', sans-serif;
             border-right:2px solid $mainYellow;
             cursor: pointer;
-            font-size:1.4rem;
+            font-size:1.1rem;
             background-color:#FFF;
-            padding:1rem .6rem;
+            padding:1rem;
             text-align: center;
             
             @mixin atSmall{
-                 margin-bottom:2rem;
-                 font-size:1.4rem;
+                margin-bottom:2rem;
                 float: left;
+                font-size:1.2rem;
+                padding:1rem 1.3rem;
             }
             
             @mixin atMedium{
@@ -155,6 +166,10 @@
                 background-color: $mainBlue;
                 color:#FFF;
               
+            }
+            
+            &:last-child{
+                margin-bottom:1.1rem;
             }
            
         }

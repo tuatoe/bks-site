@@ -73,20 +73,19 @@
         <!--hero banner-->
         
          <div id="home" class="large-hero" data-matching-link="#home-link">
-      <figure id="large-hero__thumbnail">
-
-<iframe src="https://player.vimeo.com/video/227552880?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>          
-    </figure>
-    <div class="large-hero__container">
-      <div class="large-hero__container__text-content">
-        <h1 class="large-hero__container__text-content__title">Equal Access to Quality Eduation</h1>
-          <h3 class="large-hero__container__text-content__sub-title">Empowerment Through Education</h3>
-          <button class="large-hero__container__text-content__btn btn--orange btn--large open-modal">
-             LEARN MORE<span class="fa fa-play"></span>
-          </button>
-      </div>
-    </div>
-  </div>
+            <figure id="large-hero__thumbnail" class="large-hero__iframe">
+                <iframe src="https://player.vimeo.com/video/227552880?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>          
+            </figure>
+            <div class="large-hero__container">
+              <div class="large-hero__container__text-content">
+                <h1 class="large-hero__container__text-content__title">Equal Access to Quality Eduation</h1>
+                  <h3 class="large-hero__container__text-content__sub-title">Empowerment Through Education</h3>
+                  <button class="large-hero__container__text-content__btn btn--orange btn--large open-video">
+                     LEARN MORE<span class="fa fa-play"></span>
+                  </button>
+              </div>
+            </div>
+          </div>
         <!--end hero banner-->
 
         
@@ -194,8 +193,11 @@
                     </div>
                     
                      <div class="row__medium-6 row__medium-6--larger row__b-margin-until-medium reveal-how-you-can-help">
-                        
-                         
+                         <picture>
+                            <source class="lazyload" data-srcset="assets/images/sponsor-large.jpg" media="(min-width:1010x)"  alt="Students">
+                            <source class="lazyload" data-srcset="assets/images/sponsor-portrait.jpg" media="(min-width:800px)"  alt="Students">
+                            <img class="lazyload" data-src="assets/images/sponsor-small.jpg" alt="Students">
+                        </picture>
                     </div>
                     </div>
                 </div>
@@ -204,13 +206,13 @@
             <div id="sponsor-tab-content" class="how-you-can-help__tab-content">
                 <div class="row row--gutters-small row--bottom-margin">
                     <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium reveal-how-you-can-help">
-                        <picture>
-                            <source  data-srcset="assets/images/member-large.jpg" media="(min-width:1010x)"  alt="Boy">
-                            <source class="lazyload" data-srcset="assets/images/member-portrait.jpg" media="(min-width:800px)"  alt="Boy">
-                            <img class="lazyload" data-src="assets/images/member-small.jpg" alt="Boy">
+                          <picture>
+                            <source class="lazyload" data-srcset="assets/images/donate-large.jpg" media="(min-width:1010x)"  alt="Students">
+                            <source class="lazyload" data-srcset="assets/images/donate-portrait.jpg" media="(min-width:800px)"  alt="Students">
+                            <img class="lazyload" data-src="assets/images/donate-small.jpg" alt="Students">
                         </picture>
                     </div>
-                     <div class="row__medium-8 row__medium-8--smaller reveal-how-you-can-help partner">
+                     <div class="row__medium-8 row__medium-8--smaller reveal-how-you-can-help how-you-can-help__tab-content__partner">
                          <div class="generic-content-container">
                              <h3>BECOME A PARTNER FOR CHANGE</h3>
                              <h4>GIVE MONTHLY NOW</h4>
@@ -475,13 +477,16 @@
        <!--spread the word-->
       <div id="spread-the-word" class="spread-the-word page-section page-section--yellow social-icons">
         <div class="wrapper">
-          <h2 class="section-title section-title--blue">Spread The Word</h2>
+            <div class="row row--p-bottom">
+                 <h2 class="section-title section-title--blue">Spread The Word</h2>
             <ul class="social-icons">
                 <li><a target="_blank" href="https://www.facebook.com/bksfoundation/" class="fa fa-facebook"></a></li>
                  <li><a target="_blank" href="https://twitter.com/bksfoundation" class="fa fa-twitter"></a></li>
                 <li><a class="fa fa-youtube"></a></li>
                 
             </ul>
+            </div>
+         
         </div>
      </div> 
       
@@ -495,7 +500,7 @@
                 </div>-->
                 
                      <div>
-                         <p class="small">BKS&trade; is a nonprofit 501(c)(3) public charity (tax ID# 47-2420913).<br/> Benjamin Karmon Sehkar Foundation Inc. <br/> Address: P.O. Box 1292 Fortville, IN 46040 <br /> <a href="tel:317-332-8142">Phone: 317-332-8142</a></p>
+                         <p class="small">Benjamin Karmon Sehkar Foundation Inc. is a nonprofit 501(c)(3) public charity (tax ID# 47-2420913).<br/> Address: P.O. Box 1292 Fortville, IN 46040 <br /> <a href="tel:317-332-8142">Phone: 317-332-8142</a></p>
                          <a href="#" class="btn btn--donate">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
@@ -505,7 +510,7 @@
                         </form></a>
                     </div>
                     
-                    <div class="site-footer__text small">&copy;2017 BKS&trade; Foundation, Inc. All Rights Reserved </div>               
+                    <div class="site-footer__text small">&copy;2017 BKS&trade; Foundation, Inc. All Rights Reserved  | By <a target="_blank" href="http://www.daynuaht.com">Tuatoe</a></div>               
                 
             </div>
         </footer>
@@ -667,7 +672,8 @@ Managing Optometrist and Senior Medical Director. He currently serves as the Chi
     
     <div class="modal">
         <div class="modal__inner">
-         <iframe id="bks-foundation-founder" src="https://player.vimeo.com/video/227552880" width="800" height="453" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+         <iframe id="bks-foundation-founder" src="https://player.vimeo.com/video/227552854" width="800" height="453" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+            
         </div>
         <div class="modal__close">X</div>
     </div>

@@ -4,13 +4,13 @@
     max-height: 25rem;
     overflow: hidden;
 
-    @mixin atSmall{
+    @mixin atMedium{
          max-height: 25rem;
-    }  
+    }
     
-     @mixin atSmall{
-         max-height: 43.75rem;
-    } 
+    @mixin atLarge{
+        max-height: 50rem;
+    }
   &__container{
       padding-top:5.5rem;
       position: absolute;
@@ -20,44 +20,78 @@
       left: 0;
       /*transform: translateY(-50%);*/
       background-color: rgba(34,37,37,.6);
-      @mixin atMedium{
-        padding-top:3.75rem;
-      }
+      
       
       &__text-content{
-          width:100%;
+          position: absolute;
+          width:340px;
+          margin: 0 auto;
           text-align: center;
-          top:50%;
-          transform: translateY(-50%);
+          left:50%;
+          transform: translateX(-50%);
+          z-index: 3;
+          
+          @mixin atMedium{
+              width:660px;
+          }
+          
+          @mixin atLarge{
+              width:960px;
+          }
+          
+          
 
       &__title{
-            font-weight:300;
+            font-weight:700;
             color:#FFF;
-            font-size:1.6rem;
-            text-align: left;
-       
-
+            font-size:1.4rem;
+            margin-bottom:0;
+            margin-top: 3rem;
+          
+          @mixin atMedium{
+              font-size:3rem;
+              margin-top:5%;
+              
+          }
+          
+          @mixin atLarge{
+              margin-top:20%;
+              font-size:4rem;
+          }
       }
 
       &__sub-title{
         font-weight:300;
         color:#FFF;;
         font-size:1.5rem;
-        text-align: center;
+          margin:0;
+          
+          @mixin atMedium{
+              font-weight: 300;
+              font-size:2rem;
+          }
+          
+          @mixin atLarge{
+              font-size:3rem;
+          }
         
       }
 
 
            &__btn {
-               margin-top:1rem;
+               margin-top:4rem;
                padding:.8rem 2.5rem .8rem .8rem !important;
-               text-align: center;
+           
                color:#FFF;
                cursor: pointer;
                position: relative;
-               left:30%;
+              
                &:hover{
                    background-color:$mainBlue;
+               }
+               
+               @mixin atMedium{
+                   margin-top:1rem;
                }
             
           }
@@ -80,12 +114,36 @@
   }
 
    
-
+    &__iframe{
+        margin-left:-300px;
+        margin-top:-1.25rem;
+        width:20%;
+        margin-left:.05rem;
+        
+        @mixin atMedium{
+            margin-left:-600px;
+        }
+        
+        @mixin atLarge{
+            margin-left:0;
+        }
+    }
    
 }
 
-#large-hero__thumbnail{
-    margin-top:-1.25rem;
-    width:100%;
-    margin-left:.05rem;
+
+#player, #bks-foundation-founder{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow: hidden;
+    
+    @mixin atMedium{
+        width:800px; 
+        height:453px;
+    }
 }
+
+
