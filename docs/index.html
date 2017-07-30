@@ -8,11 +8,13 @@
   <meta name="keywords" content="bks foundation, benjamin karmon sehkar foundation">
   <meta name="description" content="A group of Liberians residing in the US have established the Benjamin Karmon Sehkar Foundation Incorporated (BKS™). The BKS™ Foundation, as it is affectionately known, has been established in memory of the late Benjamin K. Sehkar.">
 
-    <link rel="stylesheet" href="assets/styles/styles-a9f2d8e289.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-7f6e8c1059.css"/>
     
     <script src="assets/scripts/Vendor.js"></script>
     
     <script src="assets/scripts/lightbox.js"></script>
+    
+     <script src="assets/scripts/froogaloop2.min.js"></script>
          
     </head>
 
@@ -44,10 +46,10 @@
                 <div class="site-header__menu-content">
                     <nav class="primary-nav primary-nav--pull-right">
                         <ul>
-                            <li><a href="#home" id="home-link">Home</a></li>
+                            <!--<li><a href="#home" id="home-link">Home</a></li>-->
                             <li><a href="#about-us" id="about-us-link">About Us</a></li>
                              <li><a href="#what-we-do" id="what-we-do-link">What We Do</a></li>
-                            <li><a href="#get-involved" id="get-involved-link">Get Involved</a></li>
+                            <li><a href="#how-you-can-help" id="how-you-can-help-link">How you can help</a></li>
                             <li><a href="#gallery" id="gallery-link">Gallery</a></li>
                             <li><a href="#meet-team" id="our-team-link">Our Team</a></li>
                             <li><a href="#events" id="events-link">Events</a></li>
@@ -62,17 +64,17 @@
        
         <!--hero banner-->
         
-        <div id="home" class="large-hero" data-matching-link="home-link">
-             <picture>
-                  <source srcset="assets/images/hero-large-2.jpg 1920px" media="(min-width:1200px)" class="large-hero__image">
-                  <source srcset="assets/images/hero-medium-2.jpg 800w" media="(min-width:990px)" class="large-hero__image">
-                  <img srcset="assets/images/hero-small-2.jpg 570w" class="large-hero__image">
-              </picture>
-
-            <div class="large-hero__text-content">
-              <div class="wrapper">
-                <h2 class="large-hero__title">Equal Access to Quality Education</h2>
-                <p class="large-hero__description">Empowerment Through Education</p>
+         <div id="home" class="large-hero" data-matching-link="#home-link">
+            <figure id="large-hero__thumbnail" class="large-hero__iframe">
+                <iframe src="https://player.vimeo.com/video/227552880?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>          
+            </figure>
+            <div class="large-hero__container">
+              <div class="large-hero__container__text-content">
+                <h1 class="large-hero__container__text-content__title">Equal Access to Quality Eduation</h1>
+                  <h3 class="large-hero__container__text-content__sub-title">Empowerment Through Education</h3>
+                  <button class="large-hero__container__text-content__btn btn--orange btn--large open-video">
+                     LEARN MORE<span class="fa fa-play"></span>
+                  </button>
               </div>
             </div>
           </div>
@@ -129,7 +131,7 @@
                     </p>
                     
                     <p>
-                        <strong>BKS&trade; Legacy Scholarship</strong> are awarded to students from the Buu-Yao District who are currently enrolled at the following institutions: the Nimba County Community College, University of Liberia, Liberia International Christian College, Starz College of Science and Technology, and the United Methodist University. Qualified students from the Buu-Yao District who are intending to enroll at these universities will be awarded The BKSBKS&trade; Legacy Scholarship. The Scholarship recipients are expected to complete annual service projects with young children and demonstrate leadership potential through involvement in school or community activities. Buu-Yao students at all levels of academic achievements may qualify for this grant. The selection process highlights an applicant’s attitude toward education, willingness to provide service to children, and financial need.
+                        <strong>BKS&trade; Legacy Scholarships</strong> are awarded to students from the Buu-Yao District who are currently enrolled at the following institutions: the Nimba County Community College, University of Liberia, Liberia International Christian College, Starz College of Science and Technology, and the United Methodist University. Qualified students from the Buu-Yao District who are intending to enroll at these universities will be awarded The BKS&trade; Legacy Scholarship. The Scholarship recipients are expected to complete annual service projects with young children and demonstrate leadership potential through involvement in school or community activities. Buu-Yao students at all levels of academic achievements may qualify for this grant. The selection process highlights an applicant's attitude toward education, willingness to provide service to children, and financial need.
                     </p>
                     
                     <h2>Our Long-term Goal</h2>
@@ -160,37 +162,49 @@
         <!--end what we do-->
         
         <!--start how you can help-->
-        <div id="get-involved" class="page-section page-section--yellow" data-matching-link="get-involved-link">
+        <div id="how-you-can-help" class="page-section page-section--yellow how-you-can-help" data-matching-link="#how-you-can-help-link">
             
             <div class="wrapper">
-                <h2 class="section-title section-title--dark-orange">How You Can Help</h2>
-                <div class="row row--gutters">
-                    <div class="row__medium-6 row__medium-6--smaller reveal-how-you-can-help">
+            <h2 class="section-title section-title--dark-orange">How You Can Help</h2>
+            <ul class="how-you-can-help__nav-tabs">
+              <li class="how-you-can-help__nav-tabs__link how-you-can-help__nav-tabs__link--current" data-tab="donate-tab-content">Get Involved</li>
+              <li class="how-you-can-help__nav-tabs__link" data-tab="sponsor-tab-content">Sponsor a Student</li>
+            </ul>
+               
+            <div id="donate-tab-content" class="how-you-can-help__tab-content how-you-can-help__nav-tabs--current-tab">
+                <div class="how-you-can-help__tab-content__donate">
+                    <div class="row row--gutters-small row--bottom-margin">
+                        <div class="row__medium-6 row__medium-6--smaller reveal-how-you-can-help">
                         <div class="generic-content-container">
                             <h3>You Can Make A Difference</h3>
                             <p>There are many ways you could get involved. Below are some ways you could help make a difference in the lives of the underprivileged and disadvantaged children in Liberia: Follow our progress on our website, Facebook, Instagram and Twitter. Help us spread the word.</p>
 
                             <h3>Make BKS&trade; Foundation, Inc. the Charity of Your Choice</h3>
-                            <p>Talk to your School / College / Church / University / Company to select BKS&trade; Foundation, Inc. as their charity of choice for donations. To promote our partnership, we will provide you with our organization’s logo and merchandise.</p>
+                            <p>Talk to your School / College / Church / University / Company to select BKS&trade; Foundation, Inc. as their charity of choice for donations. To promote our partnership, we will provide you with our organization's logo and merchandise.</p>
                         </div>
                     </div>
                     
                      <div class="row__medium-6 row__medium-6--larger row__b-margin-until-medium reveal-how-you-can-help">
-                        <iframe src="//player.vimeo.com/video/114137841?title=0&byline=0&portrait=0" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><i>12/07/2014, Alvin Sehkar's Story from Northview Church</i></p>
-                    </div>
-                </div>
-            </div>
-           
-             <div class="wrapper">
-                <div class="row row--gutters row--gutters-small partner">
-                     <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium reveal-how-you-can-help">
-                        <picture>
-                            <source  data-srcset="assets/images/member-large.jpg" media="(min-width:1010x)"  alt="Boy">
-                            <source class="lazyload" data-srcset="assets/images/member-portrait.jpg" media="(min-width:800px)"  alt="Boy">
-                            <img class="lazyload" data-src="assets/images/member-small.jpg" alt="Boy">
+                         <picture>
+                            <source class="lazyload" data-srcset="assets/images/sponsor-large.jpg" media="(min-width:1010x)"  alt="Students">
+                            <source class="lazyload" data-srcset="assets/images/sponsor-portrait.jpg" media="(min-width:800px)"  alt="Students">
+                            <img class="lazyload" data-src="assets/images/sponsor-small.jpg" alt="Students">
                         </picture>
                     </div>
-                     <div class="row__medium-8 row__medium-8--smaller reveal-how-you-can-help partner">
+                    </div>
+                </div>
+                <!--end donation panel-->
+             </div>
+            <div id="sponsor-tab-content" class="how-you-can-help__tab-content">
+                <div class="row row--gutters-small row--bottom-margin">
+                    <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium reveal-how-you-can-help">
+                          <picture>
+                            <source class="lazyload" data-srcset="assets/images/donate-large.jpg" media="(min-width:1010x)"  alt="Students">
+                            <source class="lazyload" data-srcset="assets/images/donate-portrait.jpg" media="(min-width:800px)"  alt="Students">
+                            <img class="lazyload" data-src="assets/images/donate-small.jpg" alt="Students">
+                        </picture>
+                    </div>
+                     <div class="row__medium-8 row__medium-8--smaller reveal-how-you-can-help how-you-can-help__tab-content__partner">
                          <div class="generic-content-container">
                              <h3>BECOME A PARTNER FOR CHANGE</h3>
                              <h4>GIVE MONTHLY NOW</h4>
@@ -209,11 +223,13 @@
                     </div>
                 </div>
             </div>
+              
+            </div>
         </div>
         <!--end how you can help-->
         
         <!--page gallery-->
-        <div id="gallery" class="page-section page-section--blue page-section--no-b-padding-until-large gallery" data-matching-link="gallery-link">
+        <div id="gallery" class="page-section page-section--blue page-section--no-b-padding-until-large gallery" data-matching-link="#gallery-link">
             <div class="wrapper wrapper--no-padding-until-large">
                 <h2 class="section-title section-title--white">Gallery Of Recent Projects</h2>
                 <div class="row row--gutters-small margin-b-until-medium  row--equal-height-at-large">
@@ -385,10 +401,10 @@
         </div>
         <!--end meet our team-->
         
-        <div id="events" class="page-section page-section--blue events" data-matching-link="events-link">
-            <div class="wrapper">
+        <div id="events" class="page-section page-section--blue events" data-matching-link="#events-link">
+            <div class="wrapper ">
                 <h2 class="section-title section-title--dark-orange">Events</h2>
-               <div class="row row--gutters-small">
+               <div class="row row--gutters-small row--p-bottom">
                  <div class="row__large-6">
                     <h3 class="events__section-title">Up Coming Events</h3>
                      <div class="row row--gutters-small reveal-events">
@@ -439,32 +455,34 @@
             <div class="wrapper">
                 <div class="row contact">
                     <h2 class="section-title section-title--blue" >Contact Us</h2>
-                    <div class="generic-content-container">
+                    <div class="generic-content-container jot-form">
                     <p>Please fill out this form and we will get in touch with you shortly.</p>
+                        	<script type="text/javascript" src="http://form.jotform.us/jsform/50254986298166"></script>
                     </div>
-                <script type="text/javascript" src="http://form.jotform.us/jsform/50254986298166"></script>
                     
-                    
-                    <!--<script type="text/javascript" src="https://form.jotform.us/jsform/71891677084166"></script>-->
                 </div>
             </div>
         </div>
        
         <!--end contact us-->
         
-       
+       <!--spread the word-->
       <div id="spread-the-word" class="spread-the-word page-section page-section--yellow social-icons">
         <div class="wrapper">
-          <h2 class="section-title section-title--blue">Spread The Word</h2>
+            <div class="row row--p-bottom">
+                 <h2 class="section-title section-title--blue">Spread The Word</h2>
             <ul class="social-icons">
                 <li><a target="_blank" href="https://www.facebook.com/bksfoundation/" class="fa fa-facebook"></a></li>
                  <li><a target="_blank" href="https://twitter.com/bksfoundation" class="fa fa-twitter"></a></li>
                 <li><a class="fa fa-youtube"></a></li>
                 
             </ul>
+            </div>
+         
         </div>
      </div> 
       
+        <!--footer-->
         <footer class="site-footer">
             <div class="wrapper">
                  <!--<div class="site-footer__social-media-icons">
@@ -474,7 +492,7 @@
                 </div>-->
                 
                      <div>
-                         <p class="small">BKS&trade; is a nonprofit 501(c)(3) public charity (tax ID# 47-2420913).<br/> Benjamin Karmon Sehkar Foundation Inc. <br/> Address: P.O. Box 1292 Fortville, IN 46040 <br /> <a href="tel:317-332-8142">Phone: 317-332-8142</a></p>
+                         <p class="small">Benjamin Karmon Sehkar Foundation Inc. is a nonprofit 501(c)(3) public charity (tax ID# 47-2420913).<br/> Address: P.O. Box 1292 Fortville, IN 46040 <br /> <a href="tel:317-332-8142">Phone: 317-332-8142</a></p>
                          <a href="#" class="btn btn--donate">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
@@ -484,7 +502,7 @@
                         </form></a>
                     </div>
                     
-                    <div class="site-footer__text small">&copy;2017 BKS&trade; Foundation, Inc. All Rights Reserved </div>               
+                    <div class="site-footer__text small">&copy;2017 BKS&trade; Foundation, Inc. All Rights Reserved  | By <a target="_blank" href="http://www.daynuaht.com">Tuatoe</a></div>               
                 
             </div>
         </footer>
@@ -501,14 +519,14 @@
             
         <div class="wrapper">
            <div class="generic-content-container">
-                <p>Alvin Sehkar is an advocate for underprivileged education and a social entrepreneur from Liberia. Upon Mr. Alvin Sehkar’s arrival to the United States in 2004, he made a promise to gratefully, proudly and gracefully tell his story. His has experienced the works and grace of God throughout his life. God manifested His will in his life and has brought him a long way. 
-    Now, he feels obliged to give back to the people of Liberia. With that conviction, he established a foundation in his late father’s name, the Benjamin Karmon Sehkar (BKS&trade;) Foundation, Inc. </p>  
+                <p>Alvin Sehkar is an advocate for underprivileged education and a social entrepreneur from Liberia. Upon Mr. Alvin Sehkar's arrival to the United States in 2004, he made a promise to gratefully, proudly and gracefully tell his story. His has experienced the works and grace of God throughout his life. God manifested His will in his life and has brought him a long way. 
+    Now, he feels obliged to give back to the people of Liberia. With that conviction, he established a foundation in his late father's name, the Benjamin Karmon Sehkar (BKS&trade;) Foundation, Inc. </p>  
                 <p>
-                After losing his father during the Liberian Civil war in the early 1990s, Alvin’s family fled to the Ivory Coast to seek refuge. Growing up as a refugee in the Ivory Coast with a widowed mother, Sehkar and his siblings’ lives were marked with poverty and hardship. Sometimes, his mother would have nothing to offer them, and they would go to sleep hungry without a meal. 
+                After losing his father during the Liberian Civil war in the early 1990s, Alvin's family fled to the Ivory Coast to seek refuge. Growing up as a refugee in the Ivory Coast with a widowed mother, Sehkar and his siblings' lives were marked with poverty and hardship. Sometimes, his mother would have nothing to offer them, and they would go to sleep hungry without a meal. 
                 </p>
 
                 <p>
-                Due to the hardship, and without financial Assistance or support, Sehkar withdrew from school on several occasions. Clothes and other basic human needs were scarce in their lives. Although Mr. Sehkar’s early life was not easy, his faith in God remained constant during those tough times. With the help of a Catholic diocese in Kentucky, Alvin and his family had the opportunity to resettle in Owensboro, Kentucky. It was certainly a blessing, cultural shock and a life changing experience for them. 
+                Due to the hardship, and without financial Assistance or support, Sehkar withdrew from school on several occasions. Clothes and other basic human needs were scarce in their lives. Although Mr. Sehkar's early life was not easy, his faith in God remained constant during those tough times. With the help of a Catholic diocese in Kentucky, Alvin and his family had the opportunity to resettle in Owensboro, Kentucky. It was certainly a blessing, cultural shock and a life changing experience for them. 
                 </p>
 
                 <p>
@@ -633,17 +651,25 @@ Managing Optometrist and Senior Medical Director. He currently serves as the Chi
         <div class="miantona-modal__close">X</div>
     </div>        
         
-        <!--bks scholarship-->
-        <div class="bks"> 
-            <div class="bks__inner">
-                <div class="wrapper">
-                   <script type="text/javascript" src="https://form.jotform.us/jsform/71891677084166"></script>
-                </div>
+    <!--bks scholarship-->
+    <div class="bks"> 
+        <div class="bks__inner">
+            <div class="wrapper">
+               <script type="text/javascript" src="https://form.jotform.us/jsform/71891677084166"></script>
             </div>
-            <div class="bks__close">X</div>
         </div>
+        <div class="bks__close">X</div>
+    </div>
         
     
+    <div class="modal">
+        <div class="modal__inner">
+         <iframe id="bks-foundation-founder" src="https://player.vimeo.com/video/227552854" width="800" height="453" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+            
+        </div>
+        <div class="modal__close">X</div>
+    </div>
+        
         
         <script src="assets/scripts/App.js"></script>
         

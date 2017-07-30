@@ -8,6 +8,8 @@ import DahnweihModal from './modules/DahnweihModal';
 import AllisonModal from './modules/AllisonModal';
 import MiantonaModal from './modules/MiantonaModal';
 import ScholarshipApp from './modules/ScholarshipApp';
+import Modal from './modules/Modal';
+import TabContent from './modules/TabContent';
 
 
 var mobileMenu = new MobileMenu();
@@ -39,6 +41,10 @@ new RevealOnScroll($('.reveal-events'), '70%');
 var stickyHeader = new StickyHeader();
 
 var scholarshipApp = new ScholarshipApp();
+
+var modal = new Modal();
+
+var tabContent = new TabContent();
 
 var sehkarModal = new SehkarModal();
 var eilerModal = new EilerModal();

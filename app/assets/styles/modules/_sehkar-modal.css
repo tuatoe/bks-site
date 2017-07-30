@@ -10,6 +10,7 @@
     visibility: hidden;
     transform: scale(1.2);
     transition: all .3s ease-out;
+    overflow-y: initial !important;
     &__description{
         text-align: center;
         font-size:1.3rem;
@@ -33,24 +34,21 @@
         }
     }
     
+    
      &__inner{
         /*position: absolute;*/
         width:100%;
-        height:600px;
-        overflow:auto;
         margin:2.8125rem auto;
         padding-bottom:3rem;
-        
+        height:100%;
+        padding-bottom:60px;
+        overflow-y: auto;
         @mixin atMedium{
              width:60%;
-             height:800px;
-            overflow-y: scroll;
+             height:100%;
+             overflow-y:auto;
         }
              
-    
-        /*top:50%;*/
-        /*transform: translateY(-50%);*/
-        
         &--img{
             border-radius: 80px;
             overflow: hidden;
@@ -70,4 +68,10 @@
         visibility: visible;
         transform: scale(1);
     }
+}
+
+@media only screen and (max-width: 480px) {
+  .sehkar-modal__inner {
+    max-height: none; 
+  }
 }

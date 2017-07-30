@@ -1,21 +1,24 @@
 .primary-nav{
    
     padding-top:10px;
-    @mixin atMedium{
+    @mixin atLarge{
         padding-top:0;
     }
     &--pull-right{
         
-        @mixin atMedium{
+        @mixin atLarge{
              float: right;
         }
     }
     
     ul {
-        margin:-100px 0 0 0;
+        margin:-100px 0 -15px 0;
         padding:0;
         @mixin clearfix;
         @mixin atMedium{
+             margin:-100px 0 -50px 0;
+        }
+        @mixin atLarge{
             margin:0;
         }
         
@@ -26,7 +29,7 @@
         display: inline-block;
         padding-right:7px;
          
-        @mixin atMedium{
+        @mixin atLarge{
             padding-right:20px;
              float: left;
             display: block;
@@ -35,7 +38,7 @@
     
     li:last-child{
         padding-right:0;
-        @mixin atMedium{
+        @mixin atLarge{
              padding-right:20px;
         }
     }
@@ -47,14 +50,16 @@
         display: block;
         padding: 8px 10px;
         font-size:.85rem;
-        background-color:rgba(47,85,114, .8);
+        background-color:rgba($mainYellow, 1);
         margin-bottom:10px;
+        font-weight: 400;
         
-        @mixin atMedium{
+        @mixin atLarge{
             font-size:1rem;
              padding:9px 0;
             background-color: transparent;
             margin-bottom:0;
+            background-color:transparent;
             
             &.is-current-link{
                 color:$mainOrange;
@@ -62,7 +67,12 @@
         }
         
         &:hover{
-            color:$mainOrange;
+            background:$mainGreen;
+            
+            @mixin atLarge{
+                background-color:transparent;
+                color:$mainYellow;
+            }
         }
     }
     
