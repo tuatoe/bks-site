@@ -10,6 +10,7 @@ import MiantonaModal from './modules/MiantonaModal';
 import ScholarshipApp from './modules/ScholarshipApp';
 import Modal from './modules/Modal';
 import TabContent from './modules/TabContent';
+import PahModal from './modules/PahModal';
 
 
 var mobileMenu = new MobileMenu();
@@ -51,6 +52,6 @@ var eilerModal = new EilerModal();
 var dahnweihModal = new DahnweihModal();
 var allisonModal = new AllisonModal();
 var miantonaModal = new MiantonaModal();
-
+var pahModal = new PahModal();
 
 
