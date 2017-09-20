@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11069,6 +11069,74 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var PahModal = function () {
+  function PahModal() {
+    _classCallCheck(this, PahModal);
+
+    this.openModalButton = (0, _jquery2.default)('.open-pah-modal');
+    this.modal = (0, _jquery2.default)('.pah-modal');
+    this.closeModalButton = (0, _jquery2.default)('.modal__close');
+    this.events();
+  }
+
+  _createClass(PahModal, [{
+    key: 'events',
+    value: function events() {
+      //clicking the open modal button
+      this.openModalButton.on('click', this.openModal.bind(this));
+
+      //clicking the x close modal button
+      this.closeModalButton.on('click', this.closeModal.bind(this));
+
+      //pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+      this.modal.addClass('modal--is-visible');
+      return false;
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('modal--is-visible');
+    }
+  }]);
+
+  return PahModal;
+}();
+
+exports.default = PahModal;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
@@ -11115,7 +11183,7 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11180,7 +11248,7 @@ var ScholarshipApp = function () {
 exports.default = ScholarshipApp;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11248,7 +11316,7 @@ var SehkarModal = function () {
 exports.default = SehkarModal;
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11268,7 +11336,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(14);
+var _jquerySmoothScroll = __webpack_require__(15);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11357,7 +11425,7 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11410,7 +11478,7 @@ var TabContent = function () {
 exports.default = TabContent;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11424,15 +11492,15 @@ var _MobileMenu = __webpack_require__(6);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _RevealOnScroll = __webpack_require__(8);
+var _RevealOnScroll = __webpack_require__(9);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _StickyHeader = __webpack_require__(11);
+var _StickyHeader = __webpack_require__(12);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
-var _SehkarModal = __webpack_require__(10);
+var _SehkarModal = __webpack_require__(11);
 
 var _SehkarModal2 = _interopRequireDefault(_SehkarModal);
 
@@ -11452,7 +11520,7 @@ var _MiantonaModal = __webpack_require__(5);
 
 var _MiantonaModal2 = _interopRequireDefault(_MiantonaModal);
 
-var _ScholarshipApp = __webpack_require__(9);
+var _ScholarshipApp = __webpack_require__(10);
 
 var _ScholarshipApp2 = _interopRequireDefault(_ScholarshipApp);
 
@@ -11460,9 +11528,13 @@ var _Modal = __webpack_require__(7);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _TabContent = __webpack_require__(12);
+var _TabContent = __webpack_require__(13);
 
 var _TabContent2 = _interopRequireDefault(_TabContent);
+
+var _PahModal = __webpack_require__(8);
+
+var _PahModal2 = _interopRequireDefault(_PahModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11505,9 +11577,10 @@ var eilerModal = new _EilerModal2.default();
 var dahnweihModal = new _DahnweihModal2.default();
 var allisonModal = new _AllisonModal2.default();
 var miantonaModal = new _MiantonaModal2.default();
+var pahModal = new _PahModal2.default();
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
