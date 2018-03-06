@@ -466,7 +466,7 @@ img{
 }
 
 a{
-    color:#df8f27;
+    color:#36C;
     text-decoration: none;
 }
 
@@ -492,6 +492,14 @@ a img{
 
 .white-text{
     color:#FFF !important;
+}
+
+.inline-elements a{
+        margin-right:15px;
+    }
+
+.phone{
+    color:#df8f27 !important;
 }
 
 .large-hero{

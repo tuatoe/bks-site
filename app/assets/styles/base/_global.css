@@ -15,7 +15,7 @@ img{
 }
 
 a{
-    color:$mainOrange;
+    color:#36C;
     text-decoration: none;
 }
 
@@ -41,4 +41,14 @@ a img{
 
 .white-text{
     color:#FFF !important;
+}
+
+.inline-elements{
+    a{
+        margin-right:15px;
+    }
+}
+
+.phone{
+    color:$mainOrange !important;
 }
