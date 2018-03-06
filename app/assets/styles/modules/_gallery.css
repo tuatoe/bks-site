@@ -25,4 +25,12 @@
         margin-bottom:.8rem;
         
     }
+    
+    &__images{
+        @mixin atMedium{
+            height: 300px;
+            overflow-y: scroll;
+        }
+      
+    }
 }

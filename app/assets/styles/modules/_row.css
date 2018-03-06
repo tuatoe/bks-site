@@ -3,9 +3,13 @@
 @mixin clearfix;
 
 &--t-padding{
-  padding-top:40px;
+  padding-top:80px;
 }
 
+&--b-padding{
+   padding-bottom:80px;
+}
+    
 &--gutters{
   margin-right:-65px;
 }
@@ -18,6 +22,10 @@
   margin-right:-45px;
 }
 
+&--gutters-super-small{
+    margin-right:-15px;
+}
+
 &--gutters > div{
   padding-right:65px;
 }
@@ -26,99 +34,210 @@
   padding-right:100px;
 }
 
+&--gutters-super-small > div{
+    padding-right:15px;
+}
+    
 &--gutters-small > div{
   padding-right:45px;
 }
 
-&__b-margin-until-medium{
+&__b-margin-until-large{
   margin-bottom:1rem;
 }
+  
+ @mixin atSmall {
+    &__b-margin-until-small {
+        margin-bottom:0;
+    }
     
-   &--bottom-margin{
-    margin-bottom:2rem;
- } 
+    &__small-2 {
+        width:16.66%;
+        float:left;
+    }
 
-    &--p-bottom{
-        padding-bottom:3rem;
+    &__small-3 {
+        width:25%;
+        float:left;
+
+    }
+
+    &__small-4 {
+        width:33.33%;
+        float:left;
+    }
+
+    &__small-6 {
+        width:50%;
+        float:left;
+    }
+
+    &__small-7 {
+        width:58.33%;
+        float:left;
+    }
+
+    &__small-8 {
+        width:66.66%;
+        float:left;
+    }
+
+    &__small-9 {
+        width:75%;
+        float:left;
     }
 
 
-  @mixin atMedium {
-      
- &--bottom-margin{
-    margin-bottom:4rem;
- } 
+    &__small-10 {
+        width:83.33%;
+        float:left;
+    } 
 
+    &__small-11 {
+        width:91.66%;
+        float:left;
+    } 
+
+    &__small-12 {
+        width:100%;
+        float:left;
+    } 
+  }    
+    
+  @mixin atMedium {
     &__b-margin-until-medium {
         margin-bottom:0;
     }
-      
-      &__medium-3{
-          float:left;
-          width:25%;
-      }      
+    
+    &__medium-2 {
+        width:16.66%;
+        float:left;
+    }
+
+    &__medium-3 {
+        width:25%;
+        float:left;
+
+    }
+
     &__medium-4 {
-      float:left;
-      width:33.33%;
+        width:33.33%;
+        float:left;
     }
 
-    &__medium-4--larger {
-      width:37%;
+    &__medium-6 {
+        width:50%;
+        float:left;
     }
 
-    &__medium-6{
-      float:left;
-      width:50%;
+    &__medium-7 {
+        width:58.33%;
+        float:left;
     }
 
-    &__medium-8{
-      float:left;
-      width:66.66%;
+    &__medium-8 {
+        width:66.66%;
+        float:left;
     }
 
-    &__medium-8--smaller{
-      width:63%;
+    &__medium-9 {
+        width:75%;
+        float:left;
     }
 
+
+    &__medium-10 {
+        width:83.33%;
+        float:left;
+    } 
+
+    &__medium-11 {
+        width:91.66%;
+        float:left;
+    } 
+
+    &__medium-12 {
+        width:100%;
+        float:left;
+    } 
   }
 
   @mixin atLarge {
 
-    &__b-margin-until-medium {
+    &__b-margin-until-large {
         margin-bottom:0;
     }
       
-      &__large-3{
-          flaot:left;
-          width:33.33%;
-      }
-      
     &__large-4 {
-      float:left;
-      width:33.33%;
+        width:08.33%;
+        float:left;
+    }
+    &__large-2 {
+        width:16.66%;
+        float:left;
     }
 
-    &__large--4--larger {
-      width:37%;
+    &__large-3 {
+        width:25%;
+        float:left;
+
     }
 
-    &__large-6{
-      float:left;
-      width:50%;
+    &__large-4 {
+        width:33.33%;
+        float:left;
     }
 
-    &__large-8{
-      float:left;
-      width:66.66%;
+    &__large-6 {
+        width:50%;
+        float:left;
     }
 
-    &__large-8--smaller{
-      width:63%;
+    &__large-7 {
+        width:58.33%;
+        float:left;
     }
+
+    &__large-8 {
+        width:66.66%;
+        float:left;
+    }
+
+    &__large-9 {
+        width:75%;
+        float:left;
+    }
+
+
+    &__large-10 {
+        width:83.33%;
+        float:left;
+    } 
+
+    &__large-11 {
+        width:91.66%;
+        float:left;
+    } 
+
+    &__large-12 {
+        width:100%;
+        float:left;
+    } 
 
   }
 
   /*begin equal height rules*/
+.flexbox &--equal-height-at-small{
+    @mixin atSmall{
+      display: flex;
+
+    }
+    & > div{
+      float:none;
+      display: flex;
+    }
+  }
+    
   .flexbox &--equal-height-at-medium{
     @mixin atMedium{
       display: flex;

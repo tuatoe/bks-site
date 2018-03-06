@@ -26,6 +26,7 @@
     "gulp-watch": "^4.3.11",
     "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^4.0.0-rc3",
+    "lightbox2": "^2.9.0",
     "picturefill": "^3.0.2",
     "postcss-hexrgba": "^0.2.1",
     "postcss-import": "^10.0.0",
