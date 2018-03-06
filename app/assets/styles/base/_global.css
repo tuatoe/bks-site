@@ -52,3 +52,12 @@ a img{
 .phone{
     color:$mainOrange !important;
 }
+
+.budget a{
+    display: block;
+    margin-bottom:10px;
+    @mixin atMedium{
+        margin-bottom:0;
+        display: inline;
+    }
+}
