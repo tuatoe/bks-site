@@ -81,6 +81,7 @@
            &__btn {
                margin-top:4rem;
                padding:.8rem 2.5rem .8rem .8rem !important;
+               z-index: 999;
            
                color:#FFF;
                cursor: pointer;

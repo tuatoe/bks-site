@@ -635,6 +635,7 @@ button:active{
 .large-hero__container__text-content__btn {
                margin-top:4rem;
                padding:.8rem 2.5rem .8rem .8rem !important;
+               z-index: 999;
            
                color:#FFF;
                cursor: pointer;
@@ -1396,11 +1397,20 @@ button:active{
     z-index: 5;
     -webkit-transition: background-color .3s ease-out;
     transition: background-color .3s ease-out;
+    height: auto;
 }
+
+.site-header .wrapper{
+        height:70px;
+    }
 
 .site-header--is-expanded {
          background-color:rgba(47,85,114, .9);
     }
+
+.site-header--is-expanded .wrapper{
+            height:auto;
+        }
 
 @media(min-width:800px){
 
@@ -1477,7 +1487,7 @@ button:active{
     position: absolute;
     top:10px;
     right:10px;
-    z-index: 10;
+    z-index: 999;
 
   }
 
