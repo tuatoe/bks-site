@@ -1,34 +1,33 @@
-.site-header{
+.site-header {
     padding:10px 0;
     position: absolute;
     width:100%;
     z-index: 5;
     transition: background-color .3s ease-out;
     
-    &--is-expanded{
+    &--is-expanded {
          background-color:rgba(47,85,114, .9);
     }
     
-    @mixin atLarge{
+    @mixin atMedium {
+         height:70px;
+    }
+    
+    @mixin atLarge {
         position: fixed;
         background-color:rgba(47,85,114, .6);
-        
-        &--dark{
+        &--dark {
             background-color:rgba(23,51,72,.85);
         }
     }
     
-    &__btn-container{
+    &__btn-container {
       
         margin-top: 10px;
         @mixin atLarge{
              float:right;
             margin-top:0;
         }
-        
-        /*a{
-              background-color:$mainOrange;
-        }*/
     }
     
     &__logo{

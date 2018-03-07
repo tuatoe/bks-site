@@ -9,13 +9,6 @@
             color:#666;
             margin-top:.3rem;
         }
-        
-        &__image{
-            &:hover{
-                opacity: .8;
-                transition: all .3s ease-out;
-            }
-        }
     }
     
     &__resource-center-title{
@@ -33,4 +26,29 @@
         }
       
     }
+    
+   
+    a img {
+    float: left;
+    margin-bottom:10px;
+    margin-right:10px;
+    width:20%;
+    height:20%;
+ }
+
+@mixin atSmall{
+   a img {
+    float: left;
+    margin-bottom:10px;
+    margin-right:10px;
+    width:100%;
+    height:auto;
+ }
+}
+
+@mixin atMedium{
+    a img{
+   width:100%
+}
+} 
 }

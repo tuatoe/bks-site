@@ -455,10 +455,18 @@ body{
 }
 
 img{
-  max-width: 100%;
-    width:100%;
-  height:auto;
+     max-width: 100%;
+        width:100%;
+     height:auto;
 }
+
+@media(min-width:530px){
+    img {
+        max-width: 100%;
+        width:100%;
+        height:auto;
+    }
+    }
 
 * {
     -webkit-box-sizing: border-box;
@@ -484,10 +492,6 @@ button:active{
 
 .small{
     font-size:.85rem;
-}
-
-a img{
-    width:100%;
 }
 
 .white-text{
@@ -982,6 +986,7 @@ a img{
 }
 
 @media(min-width:530px){
+     
     .row__b-margin-until-small {
         margin-bottom:0;
     }
@@ -1384,7 +1389,7 @@ a img{
                 color:#7da640;
             }
 
-.site-header{
+.site-header {
     padding:10px 0;
     position: absolute;
     width:100%;
@@ -1393,34 +1398,36 @@ a img{
     transition: background-color .3s ease-out;
 }
 
-.site-header--is-expanded{
+.site-header--is-expanded {
          background-color:rgba(47,85,114, .9);
+    }
+
+@media(min-width:800px){
+
+.site-header {
+         height:70px
+}
     }
 
 @media(min-width:1010px){
 
-.site-header{
+.site-header {
         position: fixed;
         background-color:rgba(47,85,114, .6)
 }
-        
-        .site-header--dark{
+        .site-header--dark {
             background-color:rgba(23,51,72,.85);
         }
     }
 
-.site-header__btn-container{
+.site-header__btn-container {
       
         margin-top: 10px;
-        
-        /*a{
-              background-color:$mainOrange;
-        }*/
     }
 
 @media(min-width:1010px){
 
-.site-header__btn-container{
+.site-header__btn-container {
              float:right;
             margin-top:0
     }
@@ -2283,7 +2290,7 @@ ul.social-icons li:last-child:{
         }
 
 .gallery{
-   padding-bottom:45px;
+   padding-bottom:45px; 
 }
 
 .gallery__content{
@@ -2295,12 +2302,6 @@ ul.social-icons li:last-child:{
             color:#666;
             margin-top:.3rem;
         }
-
-.gallery__content__image:hover{
-                opacity: .8;
-                -webkit-transition: all .3s ease-out;
-                transition: all .3s ease-out;
-            }
 
 .gallery__resource-center-title{
         font-weight: 300;
@@ -2317,6 +2318,30 @@ ul.social-icons li:last-child:{
             overflow-y: scroll
       
     }
+    }
+
+.gallery a img {
+    float: left;
+    margin-bottom:10px;
+    margin-right:10px;
+    width:20%;
+    height:20%;
+ }
+
+@media(min-width:530px){
+   .gallery a img {
+    float: left;
+    margin-bottom:10px;
+    margin-right:10px;
+    width:100%;
+    height:auto;
+ }
+    }
+
+@media(min-width:800px){
+    .gallery a img{
+   width:100%
+}
     }
 
 .lb-loader,.lightbox{text-align:center;line-height:0}

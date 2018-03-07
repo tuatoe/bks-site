@@ -3,11 +3,18 @@ body{
   font-family:'Roboto', sans-serif;
   color:#333;
 }
-
 img{
-  max-width: 100%;
-    width:100%;
-  height:auto;
+     max-width: 100%;
+        width:100%;
+     height:auto;
+}
+
+@mixin atSmall{
+    img {
+        max-width: 100%;
+        width:100%;
+        height:auto;
+    }
 }
 
 * {
@@ -35,9 +42,7 @@ button{
     font-size:.85rem;
 }
 
-a img{
-    width:100%;
-}
+
 
 .white-text{
     color:#FFF !important;
